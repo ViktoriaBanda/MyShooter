@@ -56,6 +56,14 @@
      <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletController.cs" />
      <Compile Include="Assets\Scripts\Events\BulletHitEvent.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyPoolCreator.cs" />
+     <Compile Include="Assets\Scripts\Events\EnemyCollisionEvent.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\Waiting.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\GlobalConstants.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:/Unity/2021.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
