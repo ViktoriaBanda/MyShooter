@@ -43,16 +43,21 @@ public class BulletController : MonoBehaviour
 
     private void PlayerShootingEventHandler(PlayerShootingEvent eventData)
     {
+        _player.transform.LookAt(eventData.Enemy.transform);
+        
         var bullet = _bulletPool.Take();
         bullet.Rigidbody.useGravity = false;
-        bullet.transform.position = _bulletSpawnPoint.position;
         
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out var hit))
-        {
-            var direction = hit.point - _bulletSpawnPoint.position;
-            bullet.Rigidbody.velocity = direction.normalized * _bulletSpeed;
-        }
+        bullet.transform.position = _bulletSpawnPoint.position;
+        var direction = eventData.Enemy.transform.position - _bulletSpawnPoint.position;
+        bullet.Rigidbody.velocity = direction * _bulletSpeed;
+
+        //var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //if (Physics.Raycast(ray, out var hit))
+        //{
+        //    var direction = hit.point - _bulletSpawnPoint.position;
+        //    bullet.Rigidbody.velocity = direction.normalized * _bulletSpeed;
+        //}
     }
 
     private void OnDestroy()

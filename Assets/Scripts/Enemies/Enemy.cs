@@ -6,16 +6,17 @@ public class Enemy : MonoBehaviour
 
     private StateMachine _stateMachine;
     private GameObject _player;
-    
+
     private void Start()
     {
         _stateMachine = new StateMachine
         (
             GetComponent<Waiting>(),
             GetComponent<Moving>(),
-            GetComponent<Attack>()
+            GetComponent<Attack>(),
+            GetComponent<Death>()
         );
-        
+
         _stateMachine.Initialize();
         _stateMachine.Enter<Waiting>();
     }

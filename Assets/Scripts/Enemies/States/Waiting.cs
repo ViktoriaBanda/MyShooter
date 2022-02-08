@@ -1,10 +1,9 @@
+using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Waiting : MonoBehaviour, IState
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
-
-    public float ArgRegion => _agrRegion;
 
     private StateMachine _stateMachine;
     
@@ -12,9 +11,11 @@ public class Waiting : MonoBehaviour, IState
     
     [SerializeField]
     private Animator _animator;
-    
-    [SerializeField]
-    private float _agrRegion = 15;
+
+    [SerializeField] 
+    private EnemyArgRegion _enemyArgRegion;
+
+    private CompositeDisposable _subscriptions;
 
     private bool _isMoving = true;
     
@@ -26,6 +27,13 @@ public class Waiting : MonoBehaviour, IState
 
     public void OnEnter()
     {
+        _enemyArgRegion.OnPlayerGetIntoArgRegion += _stateMachine.Enter<Moving>;
+        
+        _subscriptions = new CompositeDisposable
+        {
+            EventStreams.Game.Subscribe<BulletHitEvent>(BulletHitEventHandler)
+        };
+        
         _animator.SetBool(IsMove, false);
         _isMoving = false;
     }
@@ -33,18 +41,15 @@ public class Waiting : MonoBehaviour, IState
     public void OnExit()
     {
         _isMoving = true;
+        _enemyArgRegion.OnPlayerGetIntoArgRegion -= _stateMachine.Enter<Moving>;
+        _subscriptions.Dispose();
     }
 
-    private void Update()
+    private void BulletHitEventHandler(BulletHitEvent eventData)
     {
-        if (_isMoving)
+        if (eventData.HittedObject == gameObject)
         {
-            return;
-        }
-        
-        if (Vector3.Distance(transform.position, _player.transform.position) <= _agrRegion)
-        {
-            _stateMachine.Enter<Moving>();
+            _stateMachine.Enter<Death>();
         }
     }
 }

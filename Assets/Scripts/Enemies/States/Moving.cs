@@ -1,3 +1,4 @@
+using SimpleEventBus.Disposables;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,23 +14,26 @@ public class Moving : MonoBehaviour, IState
     [SerializeField]
     private NavMeshAgent _navMeshAgent;
 
-    [SerializeField] 
-    private Waiting _waitingState;
-    
     private GameObject _player;
 
-    private float _argRegion;
-
     private bool _isMoving;
+    
+    private CompositeDisposable _subscriptions;
+    
+    
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
         _player = GetComponent<Enemy>().Player;
-        _argRegion = _waitingState.ArgRegion;
     }
 
     public void OnEnter()
     {
+        _subscriptions = new CompositeDisposable
+        {
+            EventStreams.Game.Subscribe<BulletHitEvent>(BulletHitEventHandler)
+        };
+        
         _animator.SetBool(IsMove, true);
         _isMoving = true;
     }
@@ -37,6 +41,7 @@ public class Moving : MonoBehaviour, IState
     public void OnExit()
     {
         _isMoving = false;
+        _subscriptions.Dispose();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,11 +59,15 @@ public class Moving : MonoBehaviour, IState
         {
             return;
         }
-        _navMeshAgent.destination = _player.transform.position;
         
-        if (Vector3.Distance(transform.position, _player.transform.position) > _argRegion)
+        _navMeshAgent.destination = _player.transform.position;
+    }
+    
+    private void BulletHitEventHandler(BulletHitEvent eventData)
+    {
+        if (eventData.HittedObject == gameObject)
         {
-            _stateMachine.Enter<Waiting>();
+            _stateMachine.Enter<Death>();
         }
     }
 }

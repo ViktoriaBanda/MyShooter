@@ -4,11 +4,11 @@ using UnityEngine;
 public class BulletHitEvent : EventBase
 {
     public Bullet Bullet { get; }
-    public GameObject GameObject { get; }
+    public GameObject HittedObject { get; }
 
-    public BulletHitEvent(Bullet bullet, GameObject collisionGameObject)
+    public BulletHitEvent(Bullet bullet, GameObject collisionHittedObject)
     {
         Bullet = bullet;
-        GameObject = collisionGameObject;
+        HittedObject = collisionHittedObject;
     }
 }

@@ -1,10 +1,10 @@
 using SimpleEventBus.Events;
 using UnityEngine;
 
-public class PlayerShootingEvent : EventBase
+public class EnemyDiedEvent : EventBase
 {
     public GameObject Enemy { get; }
-    public PlayerShootingEvent(GameObject enemy)
+    public EnemyDiedEvent(GameObject enemy)
     {
         Enemy = enemy;
     }

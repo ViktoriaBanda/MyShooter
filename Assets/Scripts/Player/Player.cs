@@ -8,6 +8,4 @@ public class Player : MonoBehaviour
     private float _speed;
     
     public Transform Pistol;
-    
-   
 }
