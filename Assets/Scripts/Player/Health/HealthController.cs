@@ -30,16 +30,9 @@ public class HealthController : MonoBehaviour
         };
     }
 
-    private void ResetHealthBar()
+    private void Update()
     {
-        _currentHealth = _player.GetMaxHealth();
-        _healthBar.Initialize(_currentHealth, Color.green);
-        _healthBar.gameObject.SetActive(true);
-    }
-
-    private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
-    {
-        _currentHealth -= _healthReductionValue;
+        _currentHealth = _player.GetCurrentHealth();
         
         if (_currentHealth <= 0)
         {
@@ -48,6 +41,12 @@ public class HealthController : MonoBehaviour
             return;
         }
     
+        if (_currentHealth >= 20)
+        {
+            _healthBar.Initialize(_currentHealth, Color.green);
+            return;
+        }
+        
         if (_currentHealth >= 10)
         {
             _healthBar.Initialize(_currentHealth, Color.yellow);
@@ -55,6 +54,20 @@ public class HealthController : MonoBehaviour
         }
     
         _healthBar.Initialize(_currentHealth, Color.red);
+    }
+
+    private void ResetHealthBar()
+    {
+        _currentHealth = _player.GetMaxHealth();
+        _player.SetHealth(_currentHealth);
+        _healthBar.Initialize(_currentHealth, Color.green);
+        _healthBar.gameObject.SetActive(true);
+    }
+
+    private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
+    {
+        _currentHealth -= _healthReductionValue;
+        _player.SetHealth(_currentHealth);
     }
     
     private void GameStartEventHandler(GameStartEvent eventData)
