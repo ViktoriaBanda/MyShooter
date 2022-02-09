@@ -11,14 +11,11 @@ public class Attack : MonoBehaviour, IState
     [SerializeField]
     private Animator _animator;
     
-    private GameObject _player;
-    
     private CompositeDisposable _subscriptions;
 
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
-        _player = GetComponent<Enemy>().Player;
     }
 
     public void OnEnter()

@@ -14,6 +14,8 @@ public class FreeWalk : MonoBehaviour,IState
     [SerializeField] 
     private PlayerAgrRegion playerAgrRegion;
 
+    private float _speed;
+
     private StateMachine _stateMachine;
 
     private CompositeDisposable _subscriptions;
@@ -29,6 +31,8 @@ public class FreeWalk : MonoBehaviour,IState
             EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
         };
         playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
+
+        _speed = _player.GetSpeed();
     }
 
     public void OnExit()
@@ -42,28 +46,28 @@ public class FreeWalk : MonoBehaviour,IState
         if (Input.GetKey(KeyCode.A))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.back * Time.deltaTime * _player.Speed, Space.World);
+            transform.Translate(Vector3.back * Time.deltaTime * _speed, Space.World);
             return;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.forward * Time.deltaTime * _player.Speed, Space.World);
+            transform.Translate(Vector3.forward * Time.deltaTime * _speed, Space.World);
             return;
         }
 
         if (Input.GetKey(KeyCode.W))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.left * Time.deltaTime * _player.Speed, Space.World);
+            transform.Translate(Vector3.left * Time.deltaTime * _speed, Space.World);
             return;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.right * Time.deltaTime * _player.Speed, Space.World);
+            transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
             return;
         }
         

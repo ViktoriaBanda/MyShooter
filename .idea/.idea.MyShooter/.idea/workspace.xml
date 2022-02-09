@@ -2,35 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD_main.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD_main.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/timer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/timer.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolReloader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolReloader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyArgRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyArgRegion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerArgRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerArgRegion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyShooter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MyShooter.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,31 +64,23 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/IState.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/StateMachine.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerShootingEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyArgRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Finish.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HealthBarManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BulletHitEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletsSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerArgRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerAgrRegion.cs" />
@@ -99,12 +90,25 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolReloader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarЗositioner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -175,6 +179,8 @@
       <workItem from="1644412055078" duration="1304000" />
       <workItem from="1644413376847" duration="106000" />
       <workItem from="1644413856179" duration="11018000" />
+      <workItem from="1644425953068" duration="5375000" />
+      <workItem from="1644433425562" duration="1035000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -260,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644415999469</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Поправила архитектуру состояний Игрока">
+      <created>1644426032556</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644426032556</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +335,7 @@
     <MESSAGE value="после скачивания gitignore" />
     <MESSAGE value="какие-то файлы из мэина" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="Поправила архитектуру состояний Игрока" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправила архитектуру состояний Игрока" />
   </component>
 </project>

@@ -27,9 +27,11 @@ public class PlayerController : MonoBehaviour
         };
     }
     
-    private void GameStartEventHandler(GameStartEvent obj)
+    private void GameStartEventHandler(GameStartEvent eventData)
     {
         gameObject.transform.position = _playerSpawnPosition.position;
+        gameObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+        
         gameObject.SetActive(true);
         _stateMachine.Enter<FreeWalk>();
     }

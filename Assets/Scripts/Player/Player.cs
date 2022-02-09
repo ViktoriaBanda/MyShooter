@@ -1,11 +1,19 @@
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float Speed => _speed;
+    public Characteristic[] Characteristics;
 
-    [SerializeField] 
-    private float _speed;
+    public float GetSpeed()
+    {
+        var speed = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Speed");
+        return speed.CurrentValue;
+    }
     
-    public Transform Pistol;
+    public float GetMaxHealth()
+    {
+        var health = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Health");
+        return health.CurrentValue;
+    }
 }

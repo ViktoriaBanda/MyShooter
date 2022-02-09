@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class EnemyPoolCreator : MonoBehaviour
 {
-    public MonoBehaviourPool<Enemy> EnemyPool { get; private set; }
+    public MonoBehaviourPool<EnemyController> EnemyPool { get; private set; }
 
     [SerializeField] 
-    private Enemy _enemyPrefab;
+    private EnemyController enemyControllerPrefab;
     
     [SerializeField]
     private int _poolSize = 50;
@@ -15,6 +15,6 @@ public class EnemyPoolCreator : MonoBehaviour
 
     private void Awake()
     {
-        EnemyPool = new MonoBehaviourPool<Enemy>(_enemyPrefab, _enemySpawnPoint, _poolSize);
+        EnemyPool = new MonoBehaviourPool<EnemyController>(enemyControllerPrefab, _enemySpawnPoint, _poolSize);
     }
 }

@@ -13,10 +13,8 @@ public class HealthBarPositioner : MonoBehaviour
 
     private void LateUpdate()
     {
-        // World Space Point To Screen Space Point
         var pointInScreenSpace = Camera.main.WorldToScreenPoint(_healthBarRoot.transform.position + _offset);
     
-        // Screen Space Point to Canvas Space Point
         RectTransformUtility.ScreenPointToLocalPointInRectangle(transform as RectTransform, pointInScreenSpace,
             null, out var localPoint);
 

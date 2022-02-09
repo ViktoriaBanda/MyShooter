@@ -1,7 +1,7 @@
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public GameObject Player => _player;
 

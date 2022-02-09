@@ -24,7 +24,7 @@ public class Moving : MonoBehaviour, IState
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
-        _player = GetComponent<Enemy>().Player;
+        _player = GetComponent<EnemyController>().Player;
     }
 
     public void OnEnter()

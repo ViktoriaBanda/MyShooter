@@ -1,4 +1,3 @@
-using System;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,53 +5,17 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField]
-    private Image _health;
-
+    private Scrollbar _healthBar;
+    
     [SerializeField] 
-    private float _playerHealth = 20;
+    private Player _player;
 
-    private float _currentHealth;
-
-    private CompositeDisposable _subscriptions;
-
-    private void Awake()
+    public void Initialize(float currentHealth, Color color)
     {
-        _currentHealth = _playerHealth;
-        
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<PlayerGetDamageEvent>(PlayerGetDamageEventHandler),  
-            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
-        };
-        _health.color = Color.green;
-    }
+        _healthBar.size = currentHealth / _player.GetMaxHealth();
 
-    private void GameStartEventHandler(GameStartEvent eventData)
-    {
-        _currentHealth = _playerHealth;
-        _health.color = Color.green;
-    }
-
-    private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
-    {
-        _currentHealth -= 5;
-       
-        if (_currentHealth <= 0)
-        {
-            EventStreams.Game.Publish(new PlayerDiedEvent());
-        }
-
-        if (_currentHealth >= 10)
-        {
-            _health.color = Color.yellow;
-            return;
-        }
-        
-        _health.color = Color.red;
-    }
-
-    private void OnDestroy()
-    {
-        _subscriptions.Dispose();
+        var healthBarColors = _healthBar.colors;
+        healthBarColors.disabledColor = color;
+        _healthBar.colors = healthBarColors;
     }
 }
