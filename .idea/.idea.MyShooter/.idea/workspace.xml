@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyShooter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MyShooter.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/EventStreams.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/IState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/StateMachine.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerShootingEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyArgRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Finish.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HealthBarManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BulletHitEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerArgRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletsSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="" />
+      <created>1644315491351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644315491351</updated>
+      <workItem from="1644315503104" duration="20892000" />
+      <workItem from="1644341491020" duration="7578000" />
+      <workItem from="1644351738515" duration="25000" />
+      <workItem from="1644352024858" duration="3342000" />
+      <workItem from="1644389200871" duration="10518000" />
+      <workItem from="1644404790015" duration="129000" />
+      <workItem from="1644404926346" duration="552000" />
+      <workItem from="1644405612117" duration="3114000" />
+      <workItem from="1644409383966" duration="2156000" />
+      <workItem from="1644412055078" duration="1304000" />
+      <workItem from="1644413376847" duration="106000" />
+      <workItem from="1644413856179" duration="312000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add Bullet">
+      <created>1644323031953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644323031953</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Zombie States">
+      <created>1644329575422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644329575422</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new Mechanics">
+      <created>1644349706268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644349706268</updated>
+    </task>
+    <task id="LOCAL-00004" summary="newMechanics">
+      <created>1644349777065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644349777065</updated>
+    </task>
+    <task id="LOCAL-00005" summary="some changes">
+      <created>1644392706652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644392706652</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changes">
+      <created>1644394200626</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644394200626</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Поправила классы для работы с пулями">
+      <created>1644403628622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644403628622</updated>
+    </task>
+    <task id="LOCAL-00008" summary="добавила класс Weapon">
+      <created>1644404829766</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1644404829766</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gitignore">
+      <created>1644409516916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1644409516916</updated>
+    </task>
+    <task id="LOCAL-00010" summary="после скачивания gitignore">
+      <created>1644412980736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644412980736</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Bullet" />
+    <MESSAGE value="Add Zombie States" />
+    <MESSAGE value="new Mechanics" />
+    <MESSAGE value="newMechanics" />
+    <MESSAGE value="some changes" />
+    <MESSAGE value="changes" />
+    <MESSAGE value="Поправила классы для работы с пулями" />
+    <MESSAGE value="добавила класс Weapon" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="после скачивания gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="после скачивания gitignore" />
+  </component>
+</project>
