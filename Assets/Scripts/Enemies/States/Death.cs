@@ -1,3 +1,4 @@
+using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Death : MonoBehaviour, IState

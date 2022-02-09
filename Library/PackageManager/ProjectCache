@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637799094158000164
-    m_Hash: 634930817
+      ticks: 637799480124137090
+    m_Hash: 617947892
   m_LockFileStatus:
     m_FilePath: D:/Unity/Projects/MyShooter/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637799094490029042
-    m_Hash: 3302214895
+      ticks: 637799480124137090
+    m_Hash: 3508878534
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -965,10 +965,12 @@ m_ResolvedPackages:
     - 1.7.3
     - 1.7.5
     - 1.7.6
+    - 1.7.7
     - 1.8.0-pre.1
     compatible:
     - 1.7.6
-    verified: 1.7.6
+    - 1.7.7
+    verified: 1.7.7
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0

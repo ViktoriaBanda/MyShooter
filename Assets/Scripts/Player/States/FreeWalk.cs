@@ -10,9 +10,6 @@ public class FreeWalk : MonoBehaviour,IState
     
     [SerializeField] 
     private float _speed;
-    
-    [SerializeField]
-    private float _agrRegion = 10;
 
     [SerializeField] 
     private PlayerArgRegion _playerArgRegion;

@@ -21,7 +21,15 @@ public class ScreenManager : MonoBehaviour
             EventStreams.Game.Subscribe<PlayerDiedEvent>(ShowGameOverScreen)
         };
     }
-
+    
+    public void HideScreens()
+    {
+        _victory.gameObject.SetActive(false);
+        _gameOver.gameObject.SetActive(false);
+        
+        EventStreams.Game.Publish(new GameStartEvent());
+    }
+    
     private void ShowVictoryScreen(LevelWinEvent obj)
     {
         _victory.gameObject.SetActive(true);
@@ -32,11 +40,8 @@ public class ScreenManager : MonoBehaviour
         _gameOver.gameObject.SetActive(true);
     }
 
-    private void HideScreens()
+    private void OnDestroy()
     {
-        _victory.gameObject.SetActive(false);
-        _gameOver.gameObject.SetActive(false);
+        _subscriptions.Dispose();
     }
-    
-    
 }

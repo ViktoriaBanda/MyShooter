@@ -7,8 +7,6 @@ public class Waiting : MonoBehaviour, IState
 
     private StateMachine _stateMachine;
     
-    private GameObject _player;
-    
     [SerializeField]
     private Animator _animator;
 
@@ -17,12 +15,9 @@ public class Waiting : MonoBehaviour, IState
 
     private CompositeDisposable _subscriptions;
 
-    private bool _isMoving = true;
-    
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
-        _player = GetComponent<Enemy>().Player;
     }
 
     public void OnEnter()
@@ -35,12 +30,10 @@ public class Waiting : MonoBehaviour, IState
         };
         
         _animator.SetBool(IsMove, false);
-        _isMoving = false;
     }
 
     public void OnExit()
     {
-        _isMoving = true;
         _enemyArgRegion.OnPlayerGetIntoArgRegion -= _stateMachine.Enter<Moving>;
         _subscriptions.Dispose();
     }

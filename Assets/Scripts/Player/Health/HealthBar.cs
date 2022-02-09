@@ -10,27 +10,38 @@ public class HealthBar : MonoBehaviour
     [SerializeField] 
     private float _playerHealth = 20;
 
+    private float _currentHealth;
+
     private CompositeDisposable _subscriptions;
 
     private void Awake()
     {
+        _currentHealth = _playerHealth;
+        
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerGetDamageEvent>(PlayerGetDamageEventHandler),  
+            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
         };
+        _health.color = Color.green;
+    }
+
+    private void GameStartEventHandler(GameStartEvent eventData)
+    {
+        _currentHealth = _playerHealth;
         _health.color = Color.green;
     }
 
     private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
     {
-        _playerHealth -= 5;
+        _currentHealth -= 5;
 
-        if (_playerHealth <= 0)
+        if (_currentHealth <= 0)
         {
             EventStreams.Game.Publish(new PlayerDiedEvent());
         }
 
-        if (_playerHealth >= 10)
+        if (_currentHealth >= 10)
         {
             _health.color = Color.yellow;
             return;

@@ -11,7 +11,7 @@ public class HealthBarManager : MonoBehaviour
     [SerializeField] 
     private Vector3 _offset;
 
-    private void Update()
+    private void LateUpdate()
     {
         // World Space Point To Screen Space Point
         var pointInScreenSpace = Camera.main.WorldToScreenPoint(_healthBarRoot.transform.position + _offset);
