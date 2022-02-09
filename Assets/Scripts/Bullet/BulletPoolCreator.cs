@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Pool;
 using UnityEngine;
 
@@ -19,5 +17,4 @@ public class BulletPoolCreator : MonoBehaviour
     {
         BulletPool = new MonoBehaviourPool<Bullet>(_bulletPrefab, _bulletSpawnPoint, _poolSize);
     }
-
 }

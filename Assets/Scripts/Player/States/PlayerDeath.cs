@@ -1,4 +1,3 @@
-using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour, IState

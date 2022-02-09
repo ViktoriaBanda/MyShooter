@@ -41,20 +41,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\SimpleEventBus\Events\EventFactory.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\Events\EventBase.cs" />
      <Compile Include="Assets\Plugins\SMachine\StateMachine.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\Disposables\CompositeDisposable.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\EventBus.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\ISubscriptionHolder.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\SubscriptionHolder.cs" />
      <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\IEventBus.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\Disposables\CompositeDisposable.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\Events\EventFactory.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\IDebuggableEventBus.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\Events\EventBase.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\ISubscriptionHolder.cs" />
+     <Compile Include="Assets\Plugins\SMachine\IState.cs" />
      <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\ISubscription.cs" />
      <Compile Include="Assets\Plugins\Pool\MonoBehaviourPool.cs" />
-     <Compile Include="Assets\Plugins\SMachine\IState.cs" />
-     <Compile Include="Assets\Plugins\Pool\ObjectPool.cs" />
-     <Compile Include="Assets\Plugins\SimpleEventBus\Interfaces\IDebuggableEventBus.cs" />
      <Compile Include="Assets\Plugins\SimpleEventBus\Extensions\SimpleBusExtensions.cs" />
+     <Compile Include="Assets\Plugins\Pool\ObjectPool.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\EventBus.cs" />
+     <Compile Include="Assets\Plugins\SimpleEventBus\SubscriptionHolder.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:/Unity/2021.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>

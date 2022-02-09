@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HealthBarManager : MonoBehaviour
+public class HealthBarPositioner : MonoBehaviour
 {
     [SerializeField] 
     private RectTransform _healthBar;

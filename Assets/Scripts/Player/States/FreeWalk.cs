@@ -7,14 +7,13 @@ public class FreeWalk : MonoBehaviour,IState
     
     [SerializeField]
     private Animator _animator;
-    
-    [SerializeField] 
-    private float _speed;
 
     [SerializeField] 
-    private PlayerArgRegion _playerArgRegion;
-    
-    
+    private Player _player;
+
+    [SerializeField] 
+    private PlayerAgrRegion playerAgrRegion;
+
     private StateMachine _stateMachine;
 
     private CompositeDisposable _subscriptions;
@@ -29,13 +28,13 @@ public class FreeWalk : MonoBehaviour,IState
         {
             EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
         };
-        _playerArgRegion.OnEnemyGetIntoArgRegion += _stateMachine.Enter<Shooting>;
+        playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
     }
 
     public void OnExit()
     {
         _subscriptions.Dispose();
-        _playerArgRegion.OnEnemyGetIntoArgRegion -= _stateMachine.Enter<Shooting>;
+        playerAgrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
 
     private void Update()
@@ -43,30 +42,37 @@ public class FreeWalk : MonoBehaviour,IState
         if (Input.GetKey(KeyCode.A))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.back * Time.deltaTime * _speed, Space.World);
+            transform.Translate(Vector3.back * Time.deltaTime * _player.Speed, Space.World);
+            return;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.forward * Time.deltaTime * _speed, Space.World);
+            transform.Translate(Vector3.forward * Time.deltaTime * _player.Speed, Space.World);
+            return;
         }
 
         if (Input.GetKey(KeyCode.W))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.left * Time.deltaTime * _speed, Space.World);
+            transform.Translate(Vector3.left * Time.deltaTime * _player.Speed, Space.World);
             return;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
+            transform.Translate(Vector3.right * Time.deltaTime * _player.Speed, Space.World);
             return;
         }
         
         _animator.SetBool(IsMove, false);
+    }
+    
+    private void ChangeState(GameObject enemy)
+    {
+        _stateMachine.Enter<Shooting>();
     }
     
     private void PlayerDiedEventHandler(PlayerDiedEvent obj)

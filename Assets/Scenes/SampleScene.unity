@@ -349,7 +349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPoolCreator: {fileID: 404313019}
-  weapon: {fileID: 1770901589}
 --- !u!4 &404313018
 Transform:
   m_ObjectHideFlags: 0
@@ -1213,6 +1212,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &841224320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8865058148759872411, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+  m_PrefabInstance: {fileID: 8643469075091210049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd4705ce5b38654290f0b2613f462f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &928541824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2207,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d7c1450fe3ea949a2046a135235cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletPoolCreator: {fileID: 404313019}
+  _reloadTimer: 0.2
+--- !u!114 &1770901591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770901587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89ef74db83693448a31e3eb0e6cf9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAgrRegion: {fileID: 841224320}
 --- !u!1 &1891231040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,6 +3410,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1167624115923673011, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
   m_PrefabInstance: {fileID: 8643469075091210049}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7478225696585539829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8793906363049349455, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+  m_PrefabInstance: {fileID: 8643469075091210049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7478225696585317522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f914bc82a16ffff4f9265081318b369a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8643469075091210049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3396,6 +3432,10 @@ PrefabInstance:
       propertyPath: _playerSpawnPosition
       value: 
       objectReference: {fileID: 1741548507}
+    - target: {fileID: 418353959855272802, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: m_Name
+      value: AgrRegion
+      objectReference: {fileID: 0}
     - target: {fileID: 1167624115923239891, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3456,5 +3496,21 @@ PrefabInstance:
       propertyPath: _reloadTimer
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8540467772668940633, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: _freeWalkState
+      value: 
+      objectReference: {fileID: 7478225696585539829}
+    - target: {fileID: 8540467772668940633, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: playerAgrRegion
+      value: 
+      objectReference: {fileID: 841224320}
+    - target: {fileID: 8540467772668940633, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: _shootingTargets
+      value: 
+      objectReference: {fileID: 1770901591}
+    - target: {fileID: 8793906363049349455, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: playerAgrRegion
+      value: 
+      objectReference: {fileID: 841224320}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}

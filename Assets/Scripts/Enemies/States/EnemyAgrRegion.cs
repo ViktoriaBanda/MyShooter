@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class EnemyArgRegion : MonoBehaviour
+public class EnemyAgrRegion : MonoBehaviour
 {
     public event Action OnPlayerGetIntoArgRegion;
     

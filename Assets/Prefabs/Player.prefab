@@ -1089,6 +1089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc389d964b1b88499e4d77b4301832e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerSpawnPosition: {fileID: 0}
 --- !u!114 &8793906363049349455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,9 +1103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1167624115915960821}
-  _speed: 10
-  _agrRegion: 10
-  _playerArgRegion: {fileID: 8865058148759872411}
+  _player: {fileID: -5545538167555178184}
+  playerAgrRegion: {fileID: 0}
 --- !u!114 &8540467772668940633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,8 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1167624115915960821}
-  _playerArgRegion: {fileID: 8865058148759872411}
-  _reloadTimer: 0.2
+  _shootingTargets: {fileID: 0}
 --- !u!114 &-8174859836385132922
 MonoBehaviour:
   m_ObjectHideFlags: 0
