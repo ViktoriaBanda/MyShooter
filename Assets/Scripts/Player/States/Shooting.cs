@@ -75,9 +75,12 @@ public class Shooting : MonoBehaviour,IState
         {
             _animator.SetBool(IsShoot, true);
             
-            EventStreams.Game.Publish(new PlayerShootingEvent(_enemies[0]));
+            _enemies.OrderBy(enemy => Vector3.Distance(transform.position, enemy.transform.position));
             
             _currentTimer = _reloadTimer;
+            EventStreams.Game.Publish(new PlayerShootingEvent(_enemies[0]));
+            
+            transform.LookAt(_enemies[0].transform);
         }
     }
 

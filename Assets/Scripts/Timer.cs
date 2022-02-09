@@ -48,7 +48,7 @@ public class Timer : MonoBehaviour
         }
         _time.text = _currentTime.ToString();
         
-        EventStreams.Game.Publish(new LevelWinEvent());
+        EventStreams.Game.Publish(new PlayerDiedEvent());
     }
 
     private void OnDestroy()

@@ -7,8 +7,10 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private EnemyPoolCreator _enemyCreator;
+    
     [SerializeField] 
     private Transform[] _enemiesSpawnPoints;
+    
     [SerializeField]
     private int _enemiesPerSpawnPoint = 15;
 

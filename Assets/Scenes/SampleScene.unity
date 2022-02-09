@@ -328,8 +328,10 @@ GameObject:
   m_Component:
   - component: {fileID: 404313018}
   - component: {fileID: 404313017}
+  - component: {fileID: 404313019}
+  - component: {fileID: 404313020}
   m_Layer: 0
-  m_Name: BulletController
+  m_Name: BulletsController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,10 +349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b55f6dda1e50f458c2aad36d4e5a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 7478225696594792117}
-  _bulletPrefab: {fileID: 1262682978516398429, guid: f02fd3f13b7e77b41b981c34f4d4863b, type: 3}
-  _bulletSpeed: 50
-  _poolSize: 30
+  _bulletPoolCreator: {fileID: 404313019}
+  _bulletsSpawner: {fileID: 404313020}
 --- !u!4 &404313018
 Transform:
   m_ObjectHideFlags: 0
@@ -366,6 +366,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404313019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404313016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4dadc97c8e6f34abf186482fa35edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 1262682978516398429, guid: f02fd3f13b7e77b41b981c34f4d4863b, type: 3}
+  _poolSize: 30
+--- !u!114 &404313020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404313016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d7c1450fe3ea949a2046a135235cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 7478225696594792117}
 --- !u!1 &464394901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8caef6f6c77085047b103ce663cd6d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthBar: {fileID: 552595243}
+  _healthBar: {fileID: 1231579321}
   _healthBarRoot: {fileID: 7478225696585317522}
   _offset: {x: -2, y: 0, z: -0.3}
 --- !u!1001 &5843264511582436875
