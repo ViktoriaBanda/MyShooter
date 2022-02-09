@@ -42,25 +42,27 @@ public class FreeWalk : MonoBehaviour,IState
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, -1, 0);
+            _animator.SetBool(IsMove, true);
+            transform.Translate(Vector3.back * Time.deltaTime * _speed, Space.World);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 1, 0);
+            _animator.SetBool(IsMove, true);
+            transform.Translate(Vector3.forward * Time.deltaTime * _speed, Space.World);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.forward * Time.deltaTime * _speed);
+            transform.Translate(Vector3.left * Time.deltaTime * _speed, Space.World);
             return;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             _animator.SetBool(IsMove, true);
-            transform.Translate(Vector3.back * Time.deltaTime * _speed);
+            transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
             return;
         }
         

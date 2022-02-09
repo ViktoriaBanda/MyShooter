@@ -74,7 +74,7 @@ public class Shooting : MonoBehaviour,IState
         if (_enemies.Count > 0)
         {
             _animator.SetBool(IsShoot, true);
-            _enemies.OrderBy(enemy => Vector3.Distance(transform.position, enemy.transform.position));
+            
             EventStreams.Game.Publish(new PlayerShootingEvent(_enemies[0]));
             
             _currentTimer = _reloadTimer;

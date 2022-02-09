@@ -1,3 +1,4 @@
+using System;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,7 +36,7 @@ public class HealthBar : MonoBehaviour
     private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
     {
         _currentHealth -= 5;
-
+       
         if (_currentHealth <= 0)
         {
             EventStreams.Game.Publish(new PlayerDiedEvent());
@@ -48,5 +49,10 @@ public class HealthBar : MonoBehaviour
         }
         
         _health.color = Color.red;
+    }
+
+    private void OnDestroy()
+    {
+        _subscriptions.Dispose();
     }
 }
