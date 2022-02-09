@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour
     private BulletPoolCreator _bulletPoolCreator;
 
     [SerializeField] 
-    private BulletsSpawner _bulletsSpawner;
+    private Weapon weapon;
     
     private CompositeDisposable _subscriptions;
     
@@ -23,7 +23,7 @@ public class BulletController : MonoBehaviour
     private void PlayerShootingEventHandler(PlayerShootingEvent eventData)
     {
         var bullet = _bulletPoolCreator.BulletPool.Take();
-        _bulletsSpawner.SpawnBullet(bullet);
+        weapon.SpawnBullet(bullet);
     }
 
     private void BulletHitEventHandler(BulletHitEvent eventData)

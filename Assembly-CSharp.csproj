@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Player\States\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\Health\HealthBarManager.cs" />
      <Compile Include="Assets\Scripts\Events\GameStartEvent.cs" />
+     <Compile Include="Assets\Scripts\Bullet\BulletPoolCreator.cs" />
      <Compile Include="Assets\Scripts\Player\States\Shooting.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerGetDamageEvent.cs" />
@@ -72,12 +73,11 @@
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerStoppedEvent.cs" />
      <Compile Include="Assets\Scripts\Events\LevelWinEvent.cs" />
+     <Compile Include="Assets\Scripts\Bullet\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
      <Compile Include="Assets\Scripts\Events\BulletHitEvent.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
-     <Compile Include="Assets\Scripts\Bullet\BulletsSpawner.cs" />
-     <Compile Include="Assets\Scripts\Bullet\BulletPoolCreator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
