@@ -1212,7 +1212,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.5
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1289,11 +1289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e4681bd1ad7d6468381af57ab142d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleSystem:
-  - {fileID: 5947092580903948881}
-  - {fileID: 5947092580903948883}
-  - {fileID: 5947092580903948887}
-  - {fileID: 5947092580903948885}
 --- !u!1 &7723499261083122636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,25 +1401,5 @@ PrefabInstance:
 --- !u!4 &5947092580885600023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f881607407b15cc46b24d6bda799037a, type: 3}
-  m_PrefabInstance: {fileID: 5947092580885466519}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5947092580903948881 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800006, guid: f881607407b15cc46b24d6bda799037a, type: 3}
-  m_PrefabInstance: {fileID: 5947092580885466519}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5947092580903948883 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800004, guid: f881607407b15cc46b24d6bda799037a, type: 3}
-  m_PrefabInstance: {fileID: 5947092580885466519}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5947092580903948885 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800002, guid: f881607407b15cc46b24d6bda799037a, type: 3}
-  m_PrefabInstance: {fileID: 5947092580885466519}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5947092580903948887 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800000, guid: f881607407b15cc46b24d6bda799037a, type: 3}
   m_PrefabInstance: {fileID: 5947092580885466519}
   m_PrefabAsset: {fileID: 0}

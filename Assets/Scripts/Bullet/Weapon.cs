@@ -52,6 +52,7 @@ public class Weapon : MonoBehaviour
     {
         _currentBullet.Rigidbody.useGravity = false;
         _currentBullet.transform.position = transform.position;
+        _currentBullet.transform.rotation = transform.rotation;
         _currentBullet.Rigidbody.velocity = transform.forward * _currentBullet.Speed;
     }
 

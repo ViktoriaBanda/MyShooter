@@ -12,7 +12,7 @@ public class ParticlesController : MonoBehaviour
      {
          _subscriptions = new CompositeDisposable
          {
-             EventStreams.Game.Subscribe<EnemyDiedEvent>(EnemyDiedEventHandler)
+             EventStreams.Game.Subscribe<EnemyDiedEvent>(EnemyDiedEventHandler),
          };
      }
 
@@ -27,7 +27,7 @@ public class ParticlesController : MonoBehaviour
              particleSystem.Play();
          }
      }
-
+     
      private void OnDestroy()
      {
          _subscriptions.Dispose();
