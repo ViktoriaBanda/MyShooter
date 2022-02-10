@@ -4,6 +4,8 @@ using UnityEngine;
 public class FreeWalk : MonoBehaviour,IState
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
+    [SerializeField] 
+    private CharacteristicManager _characteristicManager;
     
     [SerializeField]
     private Animator _animator;
@@ -32,7 +34,7 @@ public class FreeWalk : MonoBehaviour,IState
         };
         playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
 
-        _speed = _player.GetSpeed();
+        _speed = _characteristicManager.GetCharacteristicByName("Speed").GetMaxValue();
     }
 
     public void OnExit()

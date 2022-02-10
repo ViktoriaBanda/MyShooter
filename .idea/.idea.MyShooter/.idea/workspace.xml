@@ -1,88 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="счетчик врагов">
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller Bottle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller Bottle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller Lid.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller Lid.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Model/PainKiller.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Post Processing Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Post Processing Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Clean With Logo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Clean With Logo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Clean.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Clean.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Dirty With Logo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Dirty With Logo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Dirty.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Bottle Dirty.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Clean With Logo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Clean With Logo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Clean.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Clean.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Dirty With Logo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Dirty With Logo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Dirty.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Dirty.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Lid Clean.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Lid Clean.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Lid Dirty.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Prefab/PainKiller Lid Dirty.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Clean With Logo.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Clean With Logo.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Clean.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Clean.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Dirty With Logo.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Dirty With Logo.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Dirty.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Materials/Painkillers Dirty.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Clean_With_Logo_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Painkiller/Texture/Painkillers_Dirty_With_Logo_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs.meta" afterDir="false" />
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/CharacteristicManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/CharacteristicManager.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharacteristicManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharacteristicManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,8 +50,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/IState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/StateMachine.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/AnimationController.cs" />
@@ -144,12 +80,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
@@ -160,9 +93,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerStopShootingEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacteristicManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -234,7 +172,8 @@
       <workItem from="1644413376847" duration="106000" />
       <workItem from="1644413856179" duration="11018000" />
       <workItem from="1644425953068" duration="5375000" />
-      <workItem from="1644433425562" duration="3062000" />
+      <workItem from="1644433425562" duration="3763000" />
+      <workItem from="1644492548762" duration="3524000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -334,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644435062474</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="добавила баф аптечку (код еще сырой)">
+      <created>1644437234209</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644437234209</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +344,7 @@
     <MESSAGE value="merge" />
     <MESSAGE value="Поправила архитектуру состояний Игрока" />
     <MESSAGE value="счетчик врагов" />
-    <option name="LAST_COMMIT_MESSAGE" value="счетчик врагов" />
+    <MESSAGE value="добавила баф аптечку (код еще сырой)" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила баф аптечку (код еще сырой)" />
   </component>
 </project>

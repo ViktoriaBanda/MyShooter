@@ -1,32 +1,15 @@
-using System;
-using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Characteristic[] Characteristics;
-
-    public float GetSpeed()
-    {
-        var speed = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Speed");
-        return speed.CurrentValue;
-    }
+    [SerializeField] 
+    private CharacteristicManager _characteristicManager;
     
-    public float GetMaxHealth()
-    {
-        var health = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Health");
-        return health.MaxValue;
-    }
-    
-    public float GetCurrentHealth()
-    {
-        var health = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Health");
-        return health.CurrentValue;
-    }
+    [SerializeField]
+    private Characteristic[] _characteristics;
 
-    public void SetHealth(float value)
+    private void Awake()
     {
-        var health = Characteristics.FirstOrDefault(characteristic => characteristic.Name == "Health");
-        health.CurrentValue = value;
+        _characteristicManager.Initialize(_characteristics);
     }
 }

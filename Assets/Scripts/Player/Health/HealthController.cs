@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class HealthController : MonoBehaviour
 {
     [SerializeField] 
+    private CharacteristicManager _characteristicManager;
+    
+    [SerializeField] 
     private Player _player;
 
     [SerializeField] 
@@ -19,7 +22,7 @@ public class HealthController : MonoBehaviour
     
     private CompositeDisposable _subscriptions;
     
-    private void Awake()
+    private void Start()
     {
         ResetHealthBar();
 
@@ -32,7 +35,7 @@ public class HealthController : MonoBehaviour
 
     private void Update()
     {
-        _currentHealth = _player.GetCurrentHealth();
+        _currentHealth = _characteristicManager.GetCharacteristicByName("Health").GetCurrentValue();
         
         if (_currentHealth <= 0)
         {
@@ -58,8 +61,8 @@ public class HealthController : MonoBehaviour
 
     private void ResetHealthBar()
     {
-        _currentHealth = _player.GetMaxHealth();
-        _player.SetHealth(_currentHealth);
+        _currentHealth = _characteristicManager.GetCharacteristicByName("Health").GetMaxValue();
+        _characteristicManager.GetCharacteristicByName("Health").SetValue(_currentHealth);
         _healthBar.Initialize(_currentHealth, Color.green);
         _healthBar.gameObject.SetActive(true);
     }
@@ -67,7 +70,7 @@ public class HealthController : MonoBehaviour
     private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
     {
         _currentHealth -= _healthReductionValue;
-        _player.SetHealth(_currentHealth);
+        _characteristicManager.GetCharacteristicByName("Health").SetValue(_currentHealth);
     }
     
     private void GameStartEventHandler(GameStartEvent eventData)
