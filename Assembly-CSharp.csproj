@@ -44,10 +44,12 @@
      <Compile Include="Assets\Scripts\Events\PlayerDiedEvent.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyPoolCreator.cs" />
      <Compile Include="Assets\Scripts\Player\States\PlayerDeath.cs" />
+     <Compile Include="Assets\Scripts\Buffs\Health.cs" />
      <Compile Include="Assets\Scripts\GlobalConstants.cs" />
      <Compile Include="Assets\Scripts\Player\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Events\EventStreams.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerShootingEvent.cs" />
+     <Compile Include="Assets\Scripts\Particles\ParticlesController.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyCollisionEvent.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
@@ -68,6 +70,7 @@
      <Compile Include="Assets\Scripts\Buffs\BuffManager.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletPoolReloader.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Waiting.cs" />
+     <Compile Include="Assets\Scripts\Player\CharacteristicManager.cs" />
      <Compile Include="Assets\Scripts\Buffs\Buff.cs" />
      <Compile Include="Assets\Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\EnemyAgrRegion.cs" />
@@ -85,8 +88,6 @@
      <Compile Include="Assets\Scripts\DeadEnemiesCounter.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
-     <Compile Include="Assets\Scripts\Player\CharacteristicManager.cs" />
-     <Compile Include="Assets\Scripts\Buffs\Health.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

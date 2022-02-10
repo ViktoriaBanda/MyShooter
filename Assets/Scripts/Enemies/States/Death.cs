@@ -1,10 +1,9 @@
-using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Death : MonoBehaviour, IState
 {
     private StateMachine _stateMachine;
-
+    
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -13,6 +12,7 @@ public class Death : MonoBehaviour, IState
     public void OnEnter()
     {
         gameObject.SetActive(false);
+        
         EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
     }
 

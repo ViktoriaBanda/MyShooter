@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour
         _player = player;
     }
     
-    private void GameStartEventHandler(GameStartEvent enentData)
+    private void GameStartEventHandler(GameStartEvent eventData)
     {
         _stateMachine.Enter<Waiting>();
     }
