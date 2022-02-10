@@ -3,7 +3,8 @@ using UnityEngine;
 public class Buff : MonoBehaviour
 {
     public string Name { get; set; }
-    private void OnTriggerEnter(Collider collider)
+    
+    protected virtual void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {

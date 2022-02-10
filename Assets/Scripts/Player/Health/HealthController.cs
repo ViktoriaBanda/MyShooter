@@ -8,9 +8,6 @@ public class HealthController : MonoBehaviour
     private CharacteristicManager _characteristicManager;
     
     [SerializeField] 
-    private Player _player;
-
-    [SerializeField] 
     private HealthBar _healthBar;
 
     [SerializeField] 
@@ -35,7 +32,7 @@ public class HealthController : MonoBehaviour
 
     private void Update()
     {
-        _currentHealth = _characteristicManager.GetCharacteristicByName("Health").GetCurrentValue();
+        _currentHealth = _characteristicManager.GetCharacteristicByName(_healthBar.Name).GetCurrentValue();
         
         if (_currentHealth <= 0)
         {
@@ -61,8 +58,8 @@ public class HealthController : MonoBehaviour
 
     private void ResetHealthBar()
     {
-        _currentHealth = _characteristicManager.GetCharacteristicByName("Health").GetMaxValue();
-        _characteristicManager.GetCharacteristicByName("Health").SetValue(_currentHealth);
+        _currentHealth = _characteristicManager.GetCharacteristicByName(_healthBar.Name).GetMaxValue();
+        _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);
         _healthBar.Initialize(_currentHealth, Color.green);
         _healthBar.gameObject.SetActive(true);
     }
@@ -70,7 +67,7 @@ public class HealthController : MonoBehaviour
     private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
     {
         _currentHealth -= _healthReductionValue;
-        _characteristicManager.GetCharacteristicByName("Health").SetValue(_currentHealth);
+        _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);
     }
     
     private void GameStartEventHandler(GameStartEvent eventData)
