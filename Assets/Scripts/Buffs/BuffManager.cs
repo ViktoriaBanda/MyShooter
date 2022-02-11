@@ -7,6 +7,8 @@ public class BuffManager : MonoBehaviour
 {
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
+
+    private float _playingAudioTime = 0.4f;
     
     private List<GameObject> _buffs;
     
@@ -51,8 +53,7 @@ public class BuffManager : MonoBehaviour
         if (eventData.AudioSource != null)
         {
             eventData.AudioSource.Play();
-            var time = eventData.AudioSource.clip.length;
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(_playingAudioTime);
         }
 
         eventData.Buff.gameObject.SetActive(false);

@@ -1,45 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="Добавила бомбу">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/BombExplosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/BombExplosion.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Buff.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Buff.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Portal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Portal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Shot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Shot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ZombieExplosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ZombieExplosion.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/bomb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/bomb.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/health.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/health.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/shot.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/shot.wav.meta" afterDir="false" />
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="добавла звуки">
+      <change afterPath="$PROJECT_DIR$/Assets/Images/zombieShooter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/zombieShooter.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,14 +64,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Unity/Projects/MyShooter/Assets/Scripts/Buffs/Bomb/Bomb.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Bullet.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletsSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerArgRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerAgrRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletController.cs" />
@@ -97,7 +82,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerStopShootingEvent.cs" />
@@ -106,7 +90,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacteristicManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
@@ -123,12 +106,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -204,7 +195,7 @@
       <workItem from="1644492548762" duration="11250000" />
       <workItem from="1644512750119" duration="4914000" />
       <workItem from="1644577859276" duration="9377000" />
-      <workItem from="1644589704218" duration="8667000" />
+      <workItem from="1644589704218" duration="13524000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -346,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644591009722</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="добавла звуки">
+      <created>1644602682041</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1644602682041</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +414,7 @@
     <MESSAGE value="добавила партиклы на смерть зомби" />
     <MESSAGE value="добавила партиклы" />
     <MESSAGE value="Добавила бомбу" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила бомбу" />
+    <MESSAGE value="добавла звуки" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавла звуки" />
   </component>
 </project>

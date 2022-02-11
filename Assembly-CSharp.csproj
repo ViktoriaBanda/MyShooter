@@ -93,6 +93,11 @@
      <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
      <Compile Include="Assets\Scripts\Buffs\Bomb\Bomb.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
+     <Compile Include="Assets\Scripts\GameStates\StartState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\GameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\GameOverState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\GameController.cs" />
+     <Compile Include="Assets\Scripts\GameStates\WinState.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

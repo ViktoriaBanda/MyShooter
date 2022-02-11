@@ -44,6 +44,7 @@ public class Weapon : MonoBehaviour
         if (_isTimerOver)
         {
             _currentBullet = _bulletPoolCreator.BulletPool.Take();
+            AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             Shoot();
             
             _currentTimer = _reloadTimer;
@@ -53,7 +54,6 @@ public class Weapon : MonoBehaviour
     
     private void Shoot()
     {
-        AudioSource.PlayClipAtPoint(_audioClip, transform.position);
         _currentBullet.Rigidbody.useGravity = false;
         _currentBullet.transform.position = transform.position;
         _currentBullet.transform.rotation = transform.rotation;
