@@ -42,5 +42,7 @@ public class BombTargets : MonoBehaviour
     private void OnDestroy()
     {
         _subscriptions.Dispose();
+        _bombAgrRegion.OnEnemyGetIntoAgrRegion -= AddEnemy;
+        _bombAgrRegion.OnEnemyGetOutAgrRegion -= RemoveEnemy;
     }
 }

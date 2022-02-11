@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4773010687789910167}
+  - {fileID: 1252101738754096320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c67bfd596696c74abe4a56f3d2c4a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4260459683581774843
+--- !u!1001 &7529255005732847532
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -120,7 +120,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8727151912158764876, guid: 88874181eac34e14c873ea1d0668d41c, type: 3}
       propertyPath: m_Name
-      value: Buff2
+      value: Buff
       objectReference: {fileID: 0}
     - target: {fileID: 8727151912159249260, guid: 88874181eac34e14c873ea1d0668d41c, type: 3}
       propertyPath: m_RootOrder
@@ -168,8 +168,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88874181eac34e14c873ea1d0668d41c, type: 3}
---- !u!4 &4773010687789910167 stripped
+--- !u!4 &1252101738754096320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8727151912159249260, guid: 88874181eac34e14c873ea1d0668d41c, type: 3}
-  m_PrefabInstance: {fileID: 4260459683581774843}
+  m_PrefabInstance: {fileID: 7529255005732847532}
   m_PrefabAsset: {fileID: 0}

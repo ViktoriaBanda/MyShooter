@@ -1,59 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb glass Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb glass Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes/Old-timer bomb.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes/Old-timer bomb.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Old-timer bomb prefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Old-timer bomb prefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs.meta" afterDir="false" />
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="Добавила бомбу">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/BombExplosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/BombExplosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Buff.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Buff.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Portal.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Portal.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Shot.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Shot.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ZombieExplosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ZombieExplosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/bomb.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/bomb.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/health.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/health.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/shot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/shot.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Buff2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Buff2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/FlameEmission.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/FlameEmission.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Portal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Portal.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +98,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerStopShootingEvent.cs" />
@@ -126,22 +112,23 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/Particle.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BombExplosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/ParticlesExplosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/IExploding.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticleHolder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -217,7 +204,7 @@
       <workItem from="1644492548762" duration="11250000" />
       <workItem from="1644512750119" duration="4914000" />
       <workItem from="1644577859276" duration="9377000" />
-      <workItem from="1644589704218" duration="1155000" />
+      <workItem from="1644589704218" duration="8667000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -352,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644519253926</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Добавила бомбу">
+      <created>1644591009722</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644591009722</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +415,7 @@
     <MESSAGE value="Поправила строковые данные (все равно не довольна)" />
     <MESSAGE value="добавила партиклы на смерть зомби" />
     <MESSAGE value="добавила партиклы" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила партиклы" />
+    <MESSAGE value="Добавила бомбу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила бомбу" />
   </component>
 </project>

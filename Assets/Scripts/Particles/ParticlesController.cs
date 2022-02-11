@@ -22,27 +22,26 @@ public class ParticlesController : MonoBehaviour
 
      private void EnemyDiedEventHandler(EnemyDiedEvent eventData)
      {
-         _particleZombie.transform.position = eventData.Enemy.transform.position;
-         
-         var particles = _particleZombie.GetComponentsInChildren<ParticleSystem>();
-         
-         foreach (var particleSystem in particles)
-         {
-             particleSystem.Play();
-         }
+         PlayParticles(_particleZombie, eventData.Enemy.transform);
      }
      
      private void BombExplodeEventHandler(BombExplodeEvent eventData)
      {
-        _particleBomb.transform.position = eventData.Bomb.transform.position;
-         var particles = _particleBomb.GetComponentsInChildren<ParticleSystem>();
-         
+         PlayParticles(_particleBomb, eventData.Bomb.transform);
+     }
+
+     private void PlayParticles(GameObject particle, Transform spawnPosition)
+     {
+         particle.transform.position = spawnPosition.position;
+
+         var particles = particle.GetComponentsInChildren<ParticleSystem>();
+
          foreach (var particleSystem in particles)
          {
              particleSystem.Play();
          }
      }
-     
+
      private void OnDestroy()
      {
          _subscriptions.Dispose();

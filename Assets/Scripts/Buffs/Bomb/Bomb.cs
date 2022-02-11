@@ -13,15 +13,17 @@ public class Bomb : Buff
         if (collider.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
             var targets = _bombTargets.Enemies;
+            
+            EventStreams.Game.Publish(new BombExplodeEvent(gameObject));
             KillAllTargets(targets);
         }
     }
 
     private void KillAllTargets(List<GameObject> targets)
     {
-        EventStreams.Game.Publish(new BombExplodeEvent(gameObject));
         foreach (var target in targets)
         {
+            EventStreams.Game.Publish(new EnemyDiedEvent(target)); 
             target.SetActive(false);
         }
     }

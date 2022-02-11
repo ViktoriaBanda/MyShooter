@@ -5,11 +5,14 @@ public class Buff : MonoBehaviour
 {
     public string Name { get; set; }
     
+    [SerializeField]
+    protected AudioSource _audioSource;
+    
     protected virtual void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            EventStreams.Game.Publish(new BuffAchieveEvent(this));
+            EventStreams.Game.Publish(new BuffAchieveEvent(this, _audioSource));
         }
     }
 

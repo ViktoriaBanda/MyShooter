@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using SimpleEventBus.Disposables;
 using UnityEngine;
@@ -32,7 +33,8 @@ public class BuffManager : MonoBehaviour
 
     private void BuffAchieveEventHandler(BuffAchieveEvent eventData)
     {
-        eventData.Buff.gameObject.SetActive(false);
+        StartCoroutine(PlaySoundAndHideBuff(eventData));
+        
         _buffs.Add(eventData.Buff.gameObject);
 
         if(eventData.Buff.GetType() == typeof(Bomb))
@@ -42,6 +44,18 @@ public class BuffManager : MonoBehaviour
         
         _characteristicManager.GetCharacteristicByName(eventData.Buff.Name).SetValue
                 (_characteristicManager.GetCharacteristicByName(eventData.Buff.Name).GetMaxValue());
+    }
+
+    private IEnumerator PlaySoundAndHideBuff(BuffAchieveEvent eventData)
+    {
+        if (eventData.AudioSource != null)
+        {
+            eventData.AudioSource.Play();
+            var time = eventData.AudioSource.clip.length;
+            yield return new WaitForSeconds(0.4f);
+        }
+
+        eventData.Buff.gameObject.SetActive(false);
     }
 
     private void OnDestroy()
