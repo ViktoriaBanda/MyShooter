@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Death : MonoBehaviour, IState
@@ -11,9 +12,8 @@ public class Death : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        gameObject.SetActive(false);
-        
-        EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
+       EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
+       gameObject.SetActive(false);
     }
 
     public void OnExit()

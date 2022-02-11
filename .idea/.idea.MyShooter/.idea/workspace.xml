@@ -2,105 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/play.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/pngegg (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/pngegg (1).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/timer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/timer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Riflebullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Riflebullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/SampleSceneMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/SampleSceneMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_black.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_snow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_snow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_tan.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Materials/Texture_tan.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Bullet.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Bullet/Pistolbullet.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Bullet/Pistolbullet.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Bullet/Riflebullet.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Bullet/Riflebullet.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Pistol.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Pistol/Pistol_00.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Pistol/Pistol_00.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Pistol/Pistol_00_mag.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Pistol/Pistol_00_mag.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Rifle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Rifle/Rifle_00.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Rifle/Rifle_00.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Rifle/Rifle_00_07_08_mag.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Meshes/Rifle/Rifle_00_07_08_mag.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Pistolbullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Pistolbullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Riflebullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Riflebullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00_07_08_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00_07_08_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00_07_08_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00_07_08_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00_07_08_mag.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00_07_08_mag.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_black.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_snow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_snow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_tan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Textures/Texture_tan.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buff2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion9.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Portal.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb glass Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Materials/Old-timer bomb glass Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes/Old-timer bomb.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Meshes/Old-timer bomb.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Old-timer bomb prefab.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Old-timer bomb prefab.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Bombs pack/Old-timer bomb/Textures/Old-timer bomb normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Medicine.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Flame2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Flame2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Buff2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Buff2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/FlameEmission.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/FlameEmission.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Portal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/48 Particle Effect Pack/Effect/Portal.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/play.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pngegg (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pngegg (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/timer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/timer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +76,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,14 +91,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyArgRegion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Finish.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HealthBarManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BulletHitEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Bullet.cs" />
@@ -159,7 +103,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletPoolReloader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarЗositioner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs" />
@@ -172,24 +115,33 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DeadEnemiesCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerStopShootingEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacteristicManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/Particle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombAgrRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BombExplosion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/ParticlesExplosion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Particles/IExploding.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticleHolder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -263,7 +215,9 @@
       <workItem from="1644425953068" duration="5375000" />
       <workItem from="1644433425562" duration="3763000" />
       <workItem from="1644492548762" duration="11250000" />
-      <workItem from="1644512750119" duration="3416000" />
+      <workItem from="1644512750119" duration="4914000" />
+      <workItem from="1644577859276" duration="9377000" />
+      <workItem from="1644589704218" duration="1155000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -391,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644503881700</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="добавила партиклы">
+      <created>1644519253926</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1644519253926</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +420,7 @@
     <MESSAGE value="улучшила код с бафами" />
     <MESSAGE value="Поправила строковые данные (все равно не довольна)" />
     <MESSAGE value="добавила партиклы на смерть зомби" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила партиклы на смерть зомби" />
+    <MESSAGE value="добавила партиклы" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила партиклы" />
   </component>
 </project>

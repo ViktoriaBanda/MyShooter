@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShootingTargets : MonoBehaviour
 {
     [SerializeField] 
-    private PlayerAgrRegion playerAgrRegion;
+    private PlayerAgrRegion _playerAgrRegion;
     
     private List<GameObject> _enemies = new();
     
@@ -13,8 +13,8 @@ public class ShootingTargets : MonoBehaviour
 
     private void Awake()
     {
-        playerAgrRegion.OnEnemyGetIntoAgrRegion += AddEnemy;
-        playerAgrRegion.OnEnemyGetOutAgrRegion += RemoveEnemy;
+        _playerAgrRegion.OnEnemyGetIntoAgrRegion += AddEnemy;
+        _playerAgrRegion.OnEnemyGetOutAgrRegion += RemoveEnemy;
         
         _subscriptions = new CompositeDisposable
         {

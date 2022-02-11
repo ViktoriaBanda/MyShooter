@@ -32,11 +32,16 @@ public class BuffManager : MonoBehaviour
 
     private void BuffAchieveEventHandler(BuffAchieveEvent eventData)
     {
+        eventData.Buff.gameObject.SetActive(false);
+        _buffs.Add(eventData.Buff.gameObject);
+
+        if(eventData.Buff.GetType() == typeof(Bomb))
+        {
+            return;    
+        }
+        
         _characteristicManager.GetCharacteristicByName(eventData.Buff.Name).SetValue
                 (_characteristicManager.GetCharacteristicByName(eventData.Buff.Name).GetMaxValue());
-                
-            eventData.Buff.gameObject.SetActive(false);
-            _buffs.Add(eventData.Buff.gameObject);
     }
 
     private void OnDestroy()

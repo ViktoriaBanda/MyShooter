@@ -4,7 +4,10 @@ using UnityEngine;
 public class ParticlesController : MonoBehaviour
 {
      [SerializeField]
-     private GameObject _particle;
+     private GameObject _particleZombie;
+     
+     [SerializeField]
+     private GameObject _particleBomb;
      
      private CompositeDisposable _subscriptions;
      
@@ -13,14 +16,26 @@ public class ParticlesController : MonoBehaviour
          _subscriptions = new CompositeDisposable
          {
              EventStreams.Game.Subscribe<EnemyDiedEvent>(EnemyDiedEventHandler),
+             EventStreams.Game.Subscribe<BombExplodeEvent>(BombExplodeEventHandler)
          };
      }
 
      private void EnemyDiedEventHandler(EnemyDiedEvent eventData)
      {
-         _particle.transform.position = eventData.Enemy.transform.position;
+         _particleZombie.transform.position = eventData.Enemy.transform.position;
          
-         var particles = _particle.GetComponentsInChildren<ParticleSystem>();
+         var particles = _particleZombie.GetComponentsInChildren<ParticleSystem>();
+         
+         foreach (var particleSystem in particles)
+         {
+             particleSystem.Play();
+         }
+     }
+     
+     private void BombExplodeEventHandler(BombExplodeEvent eventData)
+     {
+        _particleBomb.transform.position = eventData.Bomb.transform.position;
+         var particles = _particleBomb.GetComponentsInChildren<ParticleSystem>();
          
          foreach (var particleSystem in particles)
          {
