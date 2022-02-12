@@ -31,7 +31,7 @@ public class Moving : MonoBehaviour, IState
     {
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<BulletHitEvent>(BulletHitEventHandler)
+            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
         };
         
         _animator.SetBool(IsMove, true);
@@ -63,9 +63,9 @@ public class Moving : MonoBehaviour, IState
         _navMeshAgent.destination = _player.transform.position;
     }
     
-    private void BulletHitEventHandler(BulletHitEvent eventData)
+    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
     {
-        if (eventData.HittedObject == gameObject)
+        if (eventData.Enemy == gameObject)
         {
             _stateMachine.Enter<Death>();
         }

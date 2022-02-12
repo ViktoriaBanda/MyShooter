@@ -21,7 +21,7 @@ public class Attack : MonoBehaviour, IState
     {
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<BulletHitEvent>(BulletHitEventHandler)
+            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
         };
         
         _animator.SetBool(IsAttack, true);
@@ -50,9 +50,9 @@ public class Attack : MonoBehaviour, IState
         }
     }
     
-    private void BulletHitEventHandler(BulletHitEvent eventData)
+    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
     {
-        if (eventData.HittedObject == gameObject)
+        if (eventData.Enemy == gameObject)
         {
             _stateMachine.Enter<Death>();
         }

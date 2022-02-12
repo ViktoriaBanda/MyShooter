@@ -23,8 +23,7 @@ public class Bomb : Buff
     {
         foreach (var target in targets)
         {
-            EventStreams.Game.Publish(new EnemyDiedEvent(target)); 
-            target.SetActive(false);
+            EventStreams.Game.Publish(new EnemyTakesDamageEvent(target));
         }
     }
 }
