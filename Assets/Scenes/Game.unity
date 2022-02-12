@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 404313018}
   - component: {fileID: 404313017}
   - component: {fileID: 404313019}
+  - component: {fileID: 404313020}
   m_Layer: 0
   m_Name: BulletsController
   m_TagString: Untagged
@@ -383,6 +384,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 9072381160142539417, guid: ad711f7226483c9499525e6e7624d0fc, type: 3}
   _poolSize: 30
+--- !u!114 &404313020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404313016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3873d182b645299d680e531159d878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &488556438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2565,10 @@ PrefabInstance:
     - target: {fileID: 3214060220347665062, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214060220347665066, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3214060220348028550, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
       propertyPath: m_RootOrder

@@ -4,20 +4,20 @@ using UnityEngine;
 public class Buff : MonoBehaviour
 {
     public string Name { get; set; }
-    
-    [SerializeField]
-    protected AudioSource _audioSource;
+
+    public event Action BuffAchieveEvent;
     
     protected virtual void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            EventStreams.Game.Publish(new BuffAchieveEvent(this, _audioSource));
+            BuffAchieveEvent?.Invoke();
+            EventStreams.Game.Publish(new BuffAchieveEvent(this));
         }
     }
 
     private void Update()
     {
-        gameObject.transform.RotateAround(transform.localPosition, Vector3.up, 1);
+        gameObject.transform.RotateAround(transform.position, Vector3.up, 1);
     }
 }
