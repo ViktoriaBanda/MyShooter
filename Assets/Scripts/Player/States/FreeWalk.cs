@@ -11,9 +11,6 @@ public class FreeWalk : MonoBehaviour,IState
     private Animator _animator;
 
     [SerializeField] 
-    private Player _player;
-
-    [SerializeField] 
     private PlayerAgrRegion playerAgrRegion;
 
     private float _speed;
@@ -34,7 +31,7 @@ public class FreeWalk : MonoBehaviour,IState
         };
         playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
 
-        _speed = _characteristicManager.GetCharacteristicByName("Speed").GetMaxValue();
+        _speed = _characteristicManager.GetCharacteristicByName(GlobalConstants.SPEED).GetMaxValue();
     }
 
     public void OnExit()

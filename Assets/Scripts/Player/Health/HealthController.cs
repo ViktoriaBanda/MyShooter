@@ -14,7 +14,7 @@ public class HealthController : MonoBehaviour
     private float _healthReductionValue = 5;
     
     private float _currentHealth;
-    
+
     private ColorBlock _healthColor;
     
     private CompositeDisposable _subscriptions;
@@ -25,7 +25,7 @@ public class HealthController : MonoBehaviour
 
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<PlayerGetDamageEvent>(PlayerGetDamageEventHandler),  
+            EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerGetDamageEventHandler),  
             EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
         };
     }
@@ -34,26 +34,22 @@ public class HealthController : MonoBehaviour
     {
         _currentHealth = _characteristicManager.GetCharacteristicByName(_healthBar.Name).GetCurrentValue();
         
-        if (_currentHealth <= 0)
+        switch (_currentHealth)
         {
-            EventStreams.Game.Publish(new PlayerDiedEvent());
-            _healthBar.gameObject.SetActive(false);
-            return;
+            case <= 0:
+                EventStreams.Game.Publish(new PlayerDiedEvent());
+                _healthBar.gameObject.SetActive(false);
+                return;
+            case >= 20:
+                _healthBar.Initialize(_currentHealth, Color.green);
+                return;
+            case >= 10:
+                _healthBar.Initialize(_currentHealth, Color.yellow);
+                return;
+            default:
+                _healthBar.Initialize(_currentHealth, Color.red);
+                break;
         }
-    
-        if (_currentHealth >= 20)
-        {
-            _healthBar.Initialize(_currentHealth, Color.green);
-            return;
-        }
-        
-        if (_currentHealth >= 10)
-        {
-            _healthBar.Initialize(_currentHealth, Color.yellow);
-            return;
-        }
-    
-        _healthBar.Initialize(_currentHealth, Color.red);
     }
 
     private void ResetHealthBar()
@@ -64,7 +60,7 @@ public class HealthController : MonoBehaviour
         _healthBar.gameObject.SetActive(true);
     }
 
-    private void PlayerGetDamageEventHandler(PlayerGetDamageEvent eventData)
+    private void PlayerGetDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
         _currentHealth -= _healthReductionValue;
         _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);

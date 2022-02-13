@@ -38,7 +38,7 @@ public class Attack : MonoBehaviour, IState
     {
         if (collision.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            EventStreams.Game.Publish(new PlayerGetDamageEvent());
+            EventStreams.Game.Publish(new PlayerTakesDamageEvent());
         }
     }
 
