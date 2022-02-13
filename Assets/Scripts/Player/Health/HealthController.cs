@@ -25,7 +25,7 @@ public class HealthController : MonoBehaviour
 
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerGetDamageEventHandler),  
+            EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerTakesDamageEventHandler),  
             EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
         };
     }
@@ -60,7 +60,7 @@ public class HealthController : MonoBehaviour
         _healthBar.gameObject.SetActive(true);
     }
 
-    private void PlayerGetDamageEventHandler(PlayerTakesDamageEvent eventData)
+    private void PlayerTakesDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
         _currentHealth -= _healthReductionValue;
         _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);
