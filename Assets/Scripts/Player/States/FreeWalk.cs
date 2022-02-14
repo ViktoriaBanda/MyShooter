@@ -16,8 +16,6 @@ public class FreeWalk : MonoBehaviour,IState
     private float _speed;
 
     private StateMachine _stateMachine;
-
-    private CompositeDisposable _subscriptions;
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -25,10 +23,6 @@ public class FreeWalk : MonoBehaviour,IState
 
     public void OnEnter()
     {
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
-        };
         playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
 
         _speed = _characteristicManager.GetCharacteristicByName(GlobalConstants.SPEED).GetMaxValue();
@@ -36,7 +30,6 @@ public class FreeWalk : MonoBehaviour,IState
 
     public void OnExit()
     {
-        _subscriptions.Dispose();
         playerAgrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
 
@@ -76,10 +69,5 @@ public class FreeWalk : MonoBehaviour,IState
     private void ChangeState(GameObject enemy)
     {
         _stateMachine.Enter<Shooting>();
-    }
-    
-    private void PlayerDiedEventHandler(PlayerDiedEvent obj)
-    {
-        _stateMachine.Enter<PlayerDeath>();
     }
 }

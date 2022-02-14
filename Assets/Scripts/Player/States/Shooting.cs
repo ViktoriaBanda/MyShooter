@@ -15,8 +15,6 @@ public class Shooting : MonoBehaviour,IState
 
     private StateMachine _stateMachine;
 
-    private CompositeDisposable _subscriptions;
-
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -25,17 +23,11 @@ public class Shooting : MonoBehaviour,IState
     public void OnEnter()
     {
         _isShoot = true;
-        
-        _subscriptions = new CompositeDisposable
-        {
-           EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
-        };
     }
 
     public void OnExit()
     {
         _isShoot = false;
-        _subscriptions.Dispose();
     }
 
     private void Update()
@@ -58,10 +50,5 @@ public class Shooting : MonoBehaviour,IState
         transform.LookAt(nearestEnemy.transform);
         
         EventStreams.Game.Publish(new PlayerShootingEvent(nearestEnemy));
-    }
-
-    private void PlayerDiedEventHandler(PlayerDiedEvent obj)
-    {
-        _stateMachine.Enter<PlayerDeath>();
     }
 }

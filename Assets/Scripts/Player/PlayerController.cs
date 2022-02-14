@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
         
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
+            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler),
+            EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
         };
     }
     
@@ -34,6 +35,11 @@ public class PlayerController : MonoBehaviour
         
         gameObject.SetActive(true);
         _stateMachine.Enter<FreeWalk>();
+    }
+    
+    private void PlayerDiedEventHandler(PlayerDiedEvent obj)
+    {
+        _stateMachine.Enter<PlayerDeath>();
     }
 
     private void OnDestroy()
