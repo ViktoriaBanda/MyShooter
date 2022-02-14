@@ -9,8 +9,6 @@ public class Attack : MonoBehaviour, IState
     
     [SerializeField]
     private Animator _animator;
-    
-    private CompositeDisposable _subscriptions;
 
     public void Initialize(StateMachine stateMachine)
     {
@@ -19,19 +17,12 @@ public class Attack : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
-        };
-        
         _animator.SetBool(IsAttack, true);
     }
 
     public void OnExit()
     {
         _animator.SetBool(IsAttack, false);
-        
-        _subscriptions.Dispose();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -47,14 +38,6 @@ public class Attack : MonoBehaviour, IState
         if (collision.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
             _stateMachine.Enter<Moving>();
-        }
-    }
-    
-    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
-    {
-        if (eventData.Enemy == gameObject)
-        {
-            _stateMachine.Enter<Death>();
         }
     }
 }

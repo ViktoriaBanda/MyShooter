@@ -13,8 +13,6 @@ public class Waiting : MonoBehaviour, IState
     [SerializeField] 
     private EnemyAgrRegion _enemyAgrRegion;
 
-    private CompositeDisposable _subscriptions;
-
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -24,25 +22,11 @@ public class Waiting : MonoBehaviour, IState
     {
         _enemyAgrRegion.OnPlayerGetIntoAgrRegion += _stateMachine.Enter<Moving>;
         
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
-        };
-        
         _animator.SetBool(IsMove, false);
     }
 
     public void OnExit()
     {
         _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<Moving>;
-        _subscriptions.Dispose();
-    }
-
-    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
-    {
-        if (eventData.Enemy == gameObject)
-        {
-            _stateMachine.Enter<Death>();
-        }
     }
 }

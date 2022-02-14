@@ -17,10 +17,8 @@ public class Moving : MonoBehaviour, IState
     private GameObject _player;
 
     private bool _isMoving;
-    
-    private CompositeDisposable _subscriptions;
-    
-    
+
+
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -29,11 +27,6 @@ public class Moving : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
-        };
-        
         _animator.SetBool(IsMove, true);
         _isMoving = true;
     }
@@ -41,7 +34,6 @@ public class Moving : MonoBehaviour, IState
     public void OnExit()
     {
         _isMoving = false;
-        _subscriptions.Dispose();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -61,13 +53,5 @@ public class Moving : MonoBehaviour, IState
         }
         
         _navMeshAgent.destination = _player.transform.position;
-    }
-    
-    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
-    {
-        if (eventData.Enemy == gameObject)
-        {
-            _stateMachine.Enter<Death>();
-        }
     }
 }
