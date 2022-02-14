@@ -97,7 +97,8 @@
      <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
      <Compile Include="Assets\Scripts\Buffs\Bomb\Bomb.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
-     <Compile Include="Assets\Scripts\Particles\ParticlesPool.cs" />
+     <Compile Include="Assets\Scripts\Particles\GameObjectsPool.cs" />
+     <Compile Include="Assets\Scripts\Particles\GameObjectPool.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

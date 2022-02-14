@@ -10,13 +10,17 @@ public class ParticlesController : MonoBehaviour
      [SerializeField]
      private GameObject _particleBomb;
 
-     private ParticlesPool _zombieParticlesPool;
+     [SerializeField] 
+     private int _poolSize = 20;
+     
+     private GameObjectsPool _gameObjectsPool;
 
      private CompositeDisposable _subscriptions;
      
      private void Awake()
      {
-         _zombieParticlesPool = new ParticlesPool(_particleZombie, 5);
+         //_zombieObjectPool = new ObjectPool(_particleZombie, 5);
+         _gameObjectsPool = new GameObjectsPool(_poolSize, _particleZombie, _particleBomb);
          
          _subscriptions = new CompositeDisposable
          {
@@ -27,26 +31,28 @@ public class ParticlesController : MonoBehaviour
 
      private void EnemyDiedEventHandler(EnemyDiedEvent eventData)
      {
-         StartCoroutine(PlayParticles(eventData.Enemy.transform));
+         StartCoroutine(PlayParticles(_particleZombie, eventData.Enemy.transform));
      }
      
      private void BombExplodeEventHandler(BombExplodeEvent eventData)
      {
-         StartCoroutine(PlayParticles(eventData.Bomb.transform));
+         StartCoroutine(PlayParticles(_particleBomb, eventData.Bomb.transform));
      }
 
-     private IEnumerator PlayParticles(Transform spawnPosition)
+     private IEnumerator PlayParticles(GameObject particle, Transform spawnPosition)
      {
-         GameObject particleForSpawn;
+         //GameObject particleForSpawn;
+         //
+         //if (spawnPosition.gameObject.CompareTag(GlobalConstants.ENEMY_TAG))
+         //{
+         //    particleForSpawn = _zombieObjectPool.Take();
+         //}
+         //else
+         //{
+         //    particleForSpawn = _particleBomb;
+         //}
          
-         if (spawnPosition.gameObject.CompareTag(GlobalConstants.ENEMY_TAG))
-         {
-             particleForSpawn = _zombieParticlesPool.Take();
-         }
-         else
-         {
-             particleForSpawn = _particleBomb;
-         }
+         var particleForSpawn = _gameObjectsPool.Get(particle);
          
          particleForSpawn.transform.position = spawnPosition.position;
 
@@ -57,12 +63,9 @@ public class ParticlesController : MonoBehaviour
              particleSystem.Play();
          }
 
-         yield return new WaitForSeconds(1);
+         yield return new WaitForSeconds(2);
 
-         if (particleForSpawn != _particleBomb)
-         {
-             _zombieParticlesPool.Release(particleForSpawn);
-         }
+         _gameObjectsPool.Release(particle, particleForSpawn);
      }
 
      private void OnDestroy()

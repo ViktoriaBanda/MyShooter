@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticlesPool 
+public class GameObjectPool
 {
     private List<GameObject> _notUsedItems;
     private List<GameObject> _usedItems;
     private GameObject _itemPrefab;
-
-    public ParticlesPool(GameObject itemPrefab,int _poolSize)
+    
+    public GameObjectPool(GameObject itemPrefab,int _poolSize)
     {
         _itemPrefab = itemPrefab;
         _notUsedItems = new List<GameObject>();
@@ -20,7 +20,7 @@ public class ParticlesPool
             _notUsedItems.Add(newItem);
         }
     }
-
+    
     public GameObject Take() 
     {
         if (_notUsedItems.Count == 0)
@@ -28,7 +28,7 @@ public class ParticlesPool
             AddPoolElements();
         }
 
-        var itemToSpawn = _notUsedItems[_notUsedItems.Count - 1];
+        var itemToSpawn = _notUsedItems[^1];
         _notUsedItems.RemoveAt(_notUsedItems.Count - 1);
         
         _usedItems.Add(itemToSpawn);
@@ -40,17 +40,15 @@ public class ParticlesPool
     public void Release(GameObject item)
     {
         item.SetActive(false);
-        //item.transform.position = itemsPosition;
         _usedItems.Remove(item);
         _notUsedItems.Add(item);
     }
     
     public void ReleaseAll()
     {
-        for (int i = 0; i < _usedItems.Count; i++)
+        foreach (var item in _usedItems)
         {
-            _usedItems[i].gameObject.SetActive(false);
-            //_usedItems[i].transform.position = itemsPosition;
+            item.gameObject.SetActive(false);
         }
 
         _notUsedItems.AddRange(_usedItems);
