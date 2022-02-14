@@ -20,4 +20,9 @@ public class GameOverState : MonoBehaviour, IState
     {
         
     }
+    
+    public void UpdateState()
+    {
+        
+    }
 }

@@ -19,7 +19,6 @@ public class ParticlesController : MonoBehaviour
      
      private void Awake()
      {
-         //_zombieObjectPool = new ObjectPool(_particleZombie, 5);
          _gameObjectsPool = new GameObjectsPool(_poolSize, _particleZombie, _particleBomb);
          
          _subscriptions = new CompositeDisposable
@@ -41,17 +40,6 @@ public class ParticlesController : MonoBehaviour
 
      private IEnumerator PlayParticles(GameObject particle, Transform spawnPosition)
      {
-         //GameObject particleForSpawn;
-         //
-         //if (spawnPosition.gameObject.CompareTag(GlobalConstants.ENEMY_TAG))
-         //{
-         //    particleForSpawn = _zombieObjectPool.Take();
-         //}
-         //else
-         //{
-         //    particleForSpawn = _particleBomb;
-         //}
-         
          var particleForSpawn = _gameObjectsPool.Get(particle);
          
          particleForSpawn.transform.position = spawnPosition.position;

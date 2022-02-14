@@ -20,4 +20,9 @@ public class Death : MonoBehaviour, IState
     {
         
     }
+
+    public void UpdateState()
+    {
+        
+    }
 }

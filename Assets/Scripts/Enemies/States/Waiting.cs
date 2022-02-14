@@ -1,4 +1,3 @@
-using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Waiting : MonoBehaviour, IState
@@ -28,5 +27,10 @@ public class Waiting : MonoBehaviour, IState
     public void OnExit()
     {
         _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<Moving>;
+    }
+
+    public void UpdateState()
+    {
+        
     }
 }

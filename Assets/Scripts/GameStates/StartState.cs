@@ -22,4 +22,9 @@ public class StartState : MonoBehaviour, IState
     {
         _startButton.onClick.RemoveListener(_stateMachine.Enter<GameState>);
     }
+    
+    public void UpdateState()
+    {
+        
+    }
 }

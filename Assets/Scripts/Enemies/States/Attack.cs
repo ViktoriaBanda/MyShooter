@@ -1,4 +1,3 @@
-using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Attack : MonoBehaviour, IState
@@ -23,6 +22,11 @@ public class Attack : MonoBehaviour, IState
     public void OnExit()
     {
         _animator.SetBool(IsAttack, false);
+    }
+
+    public void UpdateState()
+    {
+        
     }
 
     private void OnCollisionEnter(Collision collision)

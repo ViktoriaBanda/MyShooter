@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 8793906363049349455}
   - component: {fileID: 8540467772668940633}
   - component: {fileID: -8174859836385132922}
+  - component: {fileID: 3387855242079917880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1109,7 +1110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
   _animator: {fileID: 1167624115915960821}
-  _player: {fileID: -5545538167555178184}
   playerAgrRegion: {fileID: 8865058148759872411}
 --- !u!114 &8540467772668940633
 MonoBehaviour:
@@ -1125,6 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 1167624115915960821}
   _shootingTargets: {fileID: 1770901591}
+  _shootingBehaviour: {fileID: 3387855242079917880}
 --- !u!114 &-8174859836385132922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1138,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a34914ca4424c4284d8b606cdc5b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3387855242079917880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167624115923239891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b0e3d194896d4eab9e1b2cd227966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootingTargets: {fileID: 1770901591}
 --- !u!1 &1167624115923239895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1351,7 @@ GameObject:
   - component: {fileID: 1770901589}
   - component: {fileID: 1770901591}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1370,6 +1384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d7c1450fe3ea949a2046a135235cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioClip: {fileID: 0}
   _bulletPoolCreator: {fileID: 0}
   _reloadTimer: 0.2
 --- !u!114 &1770901591
@@ -1384,7 +1399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89ef74db83693448a31e3eb0e6cf9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAgrRegion: {fileID: 8865058148759872411}
+  _playerAgrRegion: {fileID: 0}
 --- !u!1001 &6631034236965099907
 PrefabInstance:
   m_ObjectHideFlags: 0

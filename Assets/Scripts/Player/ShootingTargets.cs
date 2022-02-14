@@ -30,6 +30,7 @@ public class ShootingTargets : MonoBehaviour
     
     public GameObject FindNearestEnemy()
     {
+        Debug.Log(_enemies.Count);
         var nearestEnemy = _enemies[0];
         var minDistance = Vector3.Distance(transform.position, nearestEnemy.transform.position);
         
@@ -63,7 +64,7 @@ public class ShootingTargets : MonoBehaviour
     
     private void GameStartEventHandler(GameStartEvent eventData)
     {
-        _enemies = new List<GameObject>();
+        _enemies.Clear();
     }
 
     private void OnDestroy()

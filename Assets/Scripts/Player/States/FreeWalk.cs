@@ -32,7 +32,7 @@ public class FreeWalk : MonoBehaviour,IState
     {
         playerAgrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
-
+    
     private void Update()
     {
         if (Input.GetKey(KeyCode.A))

@@ -1,4 +1,3 @@
-using SimpleEventBus.Disposables;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -34,6 +33,11 @@ public class Moving : MonoBehaviour, IState
     public void OnExit()
     {
         _isMoving = false;
+    }
+
+    public void UpdateState()
+    {
+        
     }
 
     private void OnCollisionEnter(Collision collision)

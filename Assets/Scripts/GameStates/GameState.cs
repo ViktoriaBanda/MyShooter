@@ -38,5 +38,10 @@ public class GameState : MonoBehaviour, IState
     {
         _stateMachine.Enter<WinState>();
     }
+    
+    public void UpdateState()
+    {
+        
+    }
 
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WinState : MonoBehaviour, IState
@@ -17,6 +15,11 @@ public class WinState : MonoBehaviour, IState
     }
 
     public void OnExit()
+    {
+        
+    }
+
+    public void UpdateState()
     {
         
     }
