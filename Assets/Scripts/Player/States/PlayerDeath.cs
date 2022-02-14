@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour, IState
 {
+    
+    [SerializeField] 
+    private MovementBehaviour _movementBehaviour;
+    
     private StateMachine _stateMachine;
     
     public void Initialize(StateMachine stateMachine)
@@ -11,6 +15,7 @@ public class PlayerDeath : MonoBehaviour, IState
 
     public void OnEnter()
     {
+        _movementBehaviour.StopMove();
         gameObject.SetActive(false);
     }
 

@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="created GameObjectsPool for particles">
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="fix ShootingBehaviour">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +51,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesPoolCreator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/Particle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs" />
@@ -104,12 +95,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/StateMachine.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/SMachine/IState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/ShootingBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShootingTargets.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -189,7 +181,7 @@
       <workItem from="1644657061363" duration="4786000" />
       <workItem from="1644683078371" duration="4938000" />
       <workItem from="1644743602291" duration="8139000" />
-      <workItem from="1644827423226" duration="15696000" />
+      <workItem from="1644827423226" duration="16971000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -415,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644860344371</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added ShootingBehaviour">
+      <created>1644865889803</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1644865889803</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix ShootingBehaviour">
+      <created>1644865952241</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1644865952241</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,8 +471,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="добавила класс Weapon" />
-    <MESSAGE value="gitignore" />
     <MESSAGE value="после скачивания gitignore" />
     <MESSAGE value="какие-то файлы из мэина" />
     <MESSAGE value="merge" />
@@ -490,6 +494,8 @@
     <MESSAGE value="removed PlayerDiedEventHandler from PalyerStates" />
     <MESSAGE value="fixet particles" />
     <MESSAGE value="created GameObjectsPool for particles" />
-    <option name="LAST_COMMIT_MESSAGE" value="created GameObjectsPool for particles" />
+    <MESSAGE value="added ShootingBehaviour" />
+    <MESSAGE value="fix ShootingBehaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ShootingBehaviour" />
   </component>
 </project>
