@@ -36,9 +36,7 @@ public class BombTargets : MonoBehaviour
     
     private void GameStartEventHandler(GameStartEvent eventData)
     {
-        //мусор
-        //_enemies.Clear();
-        _enemies = new List<GameObject>();
+        _enemies.Clear();
     }
 
     private void OnDestroy()
