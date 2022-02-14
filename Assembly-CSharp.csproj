@@ -43,7 +43,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameStates\GameOverState.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerDiedEvent.cs" />
-     <Compile Include="Assets\Scripts\Enemies\EnemyPoolCreator.cs" />
      <Compile Include="Assets\Scripts\Player\States\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\Buffs\Health.cs" />
      <Compile Include="Assets\Scripts\GlobalConstants.cs" />

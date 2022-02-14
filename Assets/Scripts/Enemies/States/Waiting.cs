@@ -11,7 +11,7 @@ public class Waiting : MonoBehaviour, IState
     private Animator _animator;
 
     [SerializeField] 
-    private EnemyAgrRegion enemyAgrRegion;
+    private EnemyAgrRegion _enemyAgrRegion;
 
     private CompositeDisposable _subscriptions;
 
@@ -22,7 +22,7 @@ public class Waiting : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        enemyAgrRegion.OnPlayerGetIntoArgRegion += _stateMachine.Enter<Moving>;
+        _enemyAgrRegion.OnPlayerGetIntoAgrRegion += _stateMachine.Enter<Moving>;
         
         _subscriptions = new CompositeDisposable
         {
@@ -34,7 +34,7 @@ public class Waiting : MonoBehaviour, IState
 
     public void OnExit()
     {
-        enemyAgrRegion.OnPlayerGetIntoArgRegion -= _stateMachine.Enter<Moving>;
+        _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<Moving>;
         _subscriptions.Dispose();
     }
 

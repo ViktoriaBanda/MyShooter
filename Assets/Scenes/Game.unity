@@ -2751,7 +2751,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1968866723}
   - component: {fileID: 1968866722}
-  - component: {fileID: 1968866721}
   m_Layer: 0
   m_Name: EnemiesController
   m_TagString: Untagged
@@ -2759,20 +2758,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1968866721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968866720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52a520b7f5fb6034086f5ea342bc9b7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyControllerPrefab: {fileID: -306973332991023602, guid: 6c7e4dbade776a24181b7131d881953a, type: 3}
-  _poolSize: 90
 --- !u!114 &1968866722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2785,7 +2770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e01694cfc3f624b903a0b9c697090c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyCreator: {fileID: 1968866721}
+  _enemyControllerPrefab: {fileID: -306973332991023602, guid: 6c7e4dbade776a24181b7131d881953a, type: 3}
+  _poolSize: 50
   _enemiesSpawnPoints:
   - {fileID: 168098134}
   - {fileID: 1524260121}

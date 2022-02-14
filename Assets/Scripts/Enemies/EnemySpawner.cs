@@ -1,15 +1,19 @@
+using Pool;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField]
-    private EnemyPoolCreator _enemyCreator;
+    [SerializeField] 
+    private EnemyController _enemyControllerPrefab;
     
+    [SerializeField]
+    private int _poolSize = 50;
+
     [SerializeField] 
     private Transform[] _enemiesSpawnPoints;
-    
+
     [SerializeField]
     private int _enemiesPerSpawnPoint = 15;
 
@@ -18,10 +22,17 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] 
     private GameObject _player;
-    
+
     private CompositeDisposable _subscriptions;
-    private void Start()
+
+    private MonoBehaviourPool<EnemyController> _enemyPool;
+
+    private Transform _enemySpawnPoint;
+
+    private void Awake()
     {
+        _enemyPool = new MonoBehaviourPool<EnemyController>(_enemyControllerPrefab, _enemySpawnPoint, _poolSize);
+    
         ShowEnemies();
         _subscriptions = new CompositeDisposable
         {
@@ -36,7 +47,7 @@ public class EnemySpawner : MonoBehaviour
             for (var i = 0; i < _enemiesPerSpawnPoint; i++)
             {
                 var randomPosition = Random.insideUnitCircle * _randomRadius;
-                var enemy = _enemyCreator.EnemyPool.Take();
+                var enemy = _enemyPool.Take();
 
                 enemy.Initialize(_player);
                 
@@ -50,7 +61,7 @@ public class EnemySpawner : MonoBehaviour
     
     private void GameStartEventHandler(GameStartEvent eventData)
     {
-        _enemyCreator.EnemyPool.ReleaseAll();
+        _enemyPool.ReleaseAll();
         ShowEnemies();
     }
 

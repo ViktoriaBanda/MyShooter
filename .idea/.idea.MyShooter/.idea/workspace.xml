@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="Поправила размер частиц">
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +49,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerDeath.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAgrRegion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBarPositioner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
@@ -67,8 +72,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticleHolder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyDiedEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Death.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Particles/ParticlesController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" />
@@ -82,7 +85,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletCollisionDetector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/EnemyTakesDamageEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Moving.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffSound.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
@@ -93,6 +95,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Shooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/BombTargets.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/EnemyAgrRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPoolCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/Waiting.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -171,7 +178,8 @@
       <workItem from="1644589704218" duration="13886000" />
       <workItem from="1644657061363" duration="4786000" />
       <workItem from="1644683078371" duration="4938000" />
-      <workItem from="1644743602291" duration="5402000" />
+      <workItem from="1644743602291" duration="8139000" />
+      <workItem from="1644827423226" duration="4050000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -355,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644744246877</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="test">
+      <created>1644752241067</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1644752241067</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +420,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Zombie States" />
     <MESSAGE value="new Mechanics" />
     <MESSAGE value="newMechanics" />
     <MESSAGE value="some changes" />
@@ -430,6 +444,7 @@
     <MESSAGE value="добавила EnemyTakesDamageEvent (публикует бомба и BulletCollisionDetector)" />
     <MESSAGE value="Поправила классы,работающие со звуками" />
     <MESSAGE value="Поправила размер частиц" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправила размер частиц" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
