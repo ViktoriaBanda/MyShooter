@@ -3,7 +3,7 @@ using UnityEngine;
 public class FreeWalk : MonoBehaviour,IState
 {
     [SerializeField] 
-    private PlayerAgrRegion playerAgrRegion;
+    private AgrRegion agrRegion;
     
     [SerializeField] 
     private MovementBehaviour _movementBehaviour;
@@ -17,12 +17,12 @@ public class FreeWalk : MonoBehaviour,IState
     public void OnEnter()
     {
         _movementBehaviour.StartMove();
-        playerAgrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
+        agrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
     }
 
     public void OnExit()
     {
-        playerAgrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
+        agrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
 
     private void ChangeState(GameObject enemy)

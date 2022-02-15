@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PlayerAgrRegion : MonoBehaviour
+public class AgrRegion : MonoBehaviour
 {
     public event Action<GameObject> OnEnemyGetIntoAgrRegion;
     public event Action<GameObject> OnEnemyGetOutAgrRegion;

@@ -6,7 +6,7 @@ public class ShootingBehaviour : MonoBehaviour
     public event Action AllEnemiesHaveKilledEvent;
     
     [SerializeField] 
-    private ShootingTargets _shootingTargets;
+    private Targets targets;
     
     private bool _isShoot;
 
@@ -17,13 +17,13 @@ public class ShootingBehaviour : MonoBehaviour
             return;
         }
         
-        if (_shootingTargets.GetEnemiesNumber() <= 0)
+        if (targets.GetEnemiesNumber() <= 0)
         {
             AllEnemiesHaveKilledEvent?.Invoke();
             return;
         }
                 
-        var nearestEnemy = _shootingTargets.FindNearestEnemy();
+        var nearestEnemy = targets.FindNearestEnemy();
         transform.LookAt(nearestEnemy.transform);
         
         EventStreams.Game.Publish(new PlayerShootingEvent(nearestEnemy));

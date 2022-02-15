@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
-public class ShootingTargets : MonoBehaviour
+public class Targets : MonoBehaviour
 {
+    public List<GameObject> Enemies => _enemies;
+    
     [SerializeField] 
-    private PlayerAgrRegion _playerAgrRegion;
+    private AgrRegion _agrRegion;
     
     private List<GameObject> _enemies = new();
     
@@ -13,8 +15,8 @@ public class ShootingTargets : MonoBehaviour
 
     private void Awake()
     {
-        _playerAgrRegion.OnEnemyGetIntoAgrRegion += AddEnemy;
-        _playerAgrRegion.OnEnemyGetOutAgrRegion += RemoveEnemy;
+        _agrRegion.OnEnemyGetIntoAgrRegion += AddEnemy;
+        _agrRegion.OnEnemyGetOutAgrRegion += RemoveEnemy;
         
         _subscriptions = new CompositeDisposable
         {

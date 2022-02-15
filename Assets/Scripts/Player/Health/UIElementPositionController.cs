@@ -1,23 +1,23 @@
 using UnityEngine;
 
-public class HealthBarPositioner : MonoBehaviour
+public class UIElementPositionController : MonoBehaviour
 {
     [SerializeField] 
-    private RectTransform _healthBar;
+    private RectTransform _uiElement;
 
     [SerializeField] 
-    private GameObject _healthBarRoot;
+    private GameObject _uiElementRoot;
 
     [SerializeField] 
     private Vector3 _offset;
 
     private void LateUpdate()
     {
-        var pointInScreenSpace = Camera.main.WorldToScreenPoint(_healthBarRoot.transform.position + _offset);
+        var pointInScreenSpace = Camera.main.WorldToScreenPoint(_uiElementRoot.transform.position + _offset);
     
         RectTransformUtility.ScreenPointToLocalPointInRectangle(transform as RectTransform, pointInScreenSpace,
             null, out var localPoint);
 
-        _healthBar.anchoredPosition = localPoint;
+        _uiElement.anchoredPosition = localPoint;
     }
 }

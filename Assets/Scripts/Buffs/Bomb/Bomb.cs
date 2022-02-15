@@ -1,10 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bomb : Buff
 {
     [SerializeField] 
-    private BombTargets _bombTargets;
+    private Targets _bombTargets;
     
     protected override void OnTriggerEnter(Collider collider)
     {
@@ -12,18 +11,18 @@ public class Bomb : Buff
         
         if (collider.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            var targets = _bombTargets.Enemies;
-            
             EventStreams.Game.Publish(new BombExplodeEvent(gameObject));
-            KillAllTargets(targets);
+            KillAllTargets();
         }
     }
 
-    private void KillAllTargets(List<GameObject> targets)
+    private void KillAllTargets()
     {
-        foreach (var target in targets)
+        var targets = _bombTargets.Enemies;
+
+        while (targets.Count > 0)
         {
-            EventStreams.Game.Publish(new EnemyTakesDamageEvent(target));
+           EventStreams.Game.Publish(new EnemyTakesDamageEvent(targets[^1]));
         }
     }
 }
