@@ -16,7 +16,7 @@ public class MovementBehaviour : MonoBehaviour
 
     private void Start()
     {
-        _speed = _characteristicManager.GetCharacteristicByName(GlobalConstants.SPEED).GetMaxValue();
+        _speed = _characteristicManager.GetCharacteristicByType(CharacteristicType.Speed).GetMaxValue();
     }
 
     private void Update()

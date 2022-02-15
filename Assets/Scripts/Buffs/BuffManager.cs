@@ -41,8 +41,8 @@ public class BuffManager : MonoBehaviour
             return;    
         }
         
-        _characteristicManager.GetCharacteristicByName(eventData.Buff.Name).SetValue
-                (_characteristicManager.GetCharacteristicByName(eventData.Buff.Name).GetMaxValue());
+        _characteristicManager.GetCharacteristicByType(eventData.Buff.Type).SetValue
+                (_characteristicManager.GetCharacteristicByType(eventData.Buff.Type).GetMaxValue());
     }
 
 

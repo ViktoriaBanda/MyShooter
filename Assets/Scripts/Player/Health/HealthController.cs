@@ -6,9 +6,6 @@ public class HealthController : MonoBehaviour
 {
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
-    
-    [SerializeField] 
-    private HealthBar _healthBar;
 
     [SerializeField] 
     private float _healthReductionValue = 5;
@@ -30,40 +27,22 @@ public class HealthController : MonoBehaviour
         };
     }
 
-    private void Update()
-    {
-        _currentHealth = _characteristicManager.GetCharacteristicByName(_healthBar.Name).GetCurrentValue();
-        
-        switch (_currentHealth)
-        {
-            case <= 0:
-                EventStreams.Game.Publish(new PlayerDiedEvent());
-                _healthBar.gameObject.SetActive(false);
-                return;
-            case >= 20:
-                _healthBar.Initialize(_currentHealth, Color.green);
-                return;
-            case >= 10:
-                _healthBar.Initialize(_currentHealth, Color.yellow);
-                return;
-            default:
-                _healthBar.Initialize(_currentHealth, Color.red);
-                break;
-        }
-    }
-
     private void ResetHealthBar()
     {
-        _currentHealth = _characteristicManager.GetCharacteristicByName(_healthBar.Name).GetMaxValue();
-        _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);
-        _healthBar.Initialize(_currentHealth, Color.green);
-        _healthBar.gameObject.SetActive(true);
+        _currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
+        _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).SetValue(_currentHealth);
     }
 
     private void PlayerTakesDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
+        _currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetCurrentValue();
         _currentHealth -= _healthReductionValue;
-        _characteristicManager.GetCharacteristicByName(_healthBar.Name).SetValue(_currentHealth);
+        _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).SetValue(_currentHealth);
+
+        if (_currentHealth <= 0)
+        {
+            EventStreams.Game.Publish(new PlayerDiedEvent());
+        }
     }
     
     private void GameStartEventHandler(GameStartEvent eventData)
