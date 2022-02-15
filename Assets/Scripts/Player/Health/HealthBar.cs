@@ -3,8 +3,6 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public string Name => GlobalConstants.HEALTH;
-
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
 

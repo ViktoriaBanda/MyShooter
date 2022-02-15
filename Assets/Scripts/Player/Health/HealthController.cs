@@ -11,6 +11,7 @@ public class HealthController : MonoBehaviour
     private float _healthReductionValue = 5;
     
     private float _currentHealth;
+    private float _maxHealth;
 
     private ColorBlock _healthColor;
     
@@ -18,8 +19,7 @@ public class HealthController : MonoBehaviour
     
     private void Start()
     {
-        ResetHealthBar();
-
+        _maxHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerTakesDamageEventHandler),  
@@ -27,29 +27,32 @@ public class HealthController : MonoBehaviour
         };
     }
 
-    private void ResetHealthBar()
-    {
-        _currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
-        _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).SetValue(_currentHealth);
-    }
-
     private void PlayerTakesDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
-        _currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetCurrentValue();
+        var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
+        _currentHealth = currentHealth.GetCurrentValue();
+        
         _currentHealth -= _healthReductionValue;
-        _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).SetValue(_currentHealth);
+        currentHealth.SetValue(_currentHealth);
 
         if (_currentHealth <= 0)
         {
             EventStreams.Game.Publish(new PlayerDiedEvent());
         }
     }
-    
+
     private void GameStartEventHandler(GameStartEvent eventData)
     {
-        ResetHealthBar();
+        ResetHealth();
     }
-    
+
+    private void ResetHealth()
+    {
+        _currentHealth = _maxHealth;
+        var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
+        currentHealth.SetValue(_currentHealth);
+    }
+
     private void OnDestroy()
     {
         _subscriptions.Dispose();
