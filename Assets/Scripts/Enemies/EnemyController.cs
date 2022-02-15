@@ -14,14 +14,14 @@ public class EnemyController : MonoBehaviour
     {
         _stateMachine = new StateMachine
         (
-            GetComponent<Waiting>(),
-            GetComponent<Moving>(),
-            GetComponent<Attack>(),
-            GetComponent<Death>()
+            GetComponent<WaitingState>(),
+            GetComponent<MovingState>(),
+            GetComponent<AttackState>(),
+            GetComponent<DeathState>()
         );
 
         _stateMachine.Initialize();
-        _stateMachine.Enter<Waiting>();
+        _stateMachine.Enter<WaitingState>();
         
         _subscriptions = new CompositeDisposable
         {
@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
     
     private void GameStartEventHandler(GameStartEvent eventData)
     {
-        _stateMachine.Enter<Waiting>();
+        _stateMachine.Enter<WaitingState>();
     }
 
     private void OnDestroy()
@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
     {
         if (eventData.Enemy == gameObject)
         {
-            _stateMachine.Enter<Death>();
+            _stateMachine.Enter<DeathState>();
         }
     }
 }

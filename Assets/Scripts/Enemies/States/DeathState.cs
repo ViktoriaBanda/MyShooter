@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class Death : MonoBehaviour, IState
+public class DeathState : MonoBehaviour, IState
 {
     private StateMachine _stateMachine;
     

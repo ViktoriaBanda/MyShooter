@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Waiting : MonoBehaviour, IState
+public class WaitingState : MonoBehaviour, IState
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
 
@@ -19,14 +19,14 @@ public class Waiting : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        _enemyAgrRegion.OnPlayerGetIntoAgrRegion += _stateMachine.Enter<Moving>;
+        _enemyAgrRegion.OnPlayerGetIntoAgrRegion += _stateMachine.Enter<MovingState>;
         
         _animator.SetBool(IsMove, false);
     }
 
     public void OnExit()
     {
-        _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<Moving>;
+        _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<MovingState>;
     }
 
     public void UpdateState()

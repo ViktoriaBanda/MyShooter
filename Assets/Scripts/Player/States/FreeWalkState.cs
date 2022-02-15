@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FreeWalk : MonoBehaviour,IState
+public class FreeWalkState : MonoBehaviour,IState
 {
     [SerializeField] 
     private AgrRegion agrRegion;
@@ -27,6 +27,6 @@ public class FreeWalk : MonoBehaviour,IState
 
     private void ChangeState(GameObject enemy)
     {
-        _stateMachine.Enter<Shooting>();
+        _stateMachine.Enter<ShootingState>();
     }
 }

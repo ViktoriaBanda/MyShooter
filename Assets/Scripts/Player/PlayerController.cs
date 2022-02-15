@@ -13,13 +13,13 @@ public class PlayerController : MonoBehaviour
     {
         _stateMachine = new StateMachine
         (
-            GetComponent<FreeWalk>(),
-            GetComponent<Shooting>(),
-            GetComponent<PlayerDeath>()
+            GetComponent<FreeWalkState>(),
+            GetComponent<ShootingState>(),
+            GetComponent<PlayerDeathState>()
         );
         
         _stateMachine.Initialize();
-        _stateMachine.Enter<FreeWalk>();
+        _stateMachine.Enter<FreeWalkState>();
         
         _subscriptions = new CompositeDisposable
         {
@@ -34,12 +34,12 @@ public class PlayerController : MonoBehaviour
         gameObject.transform.rotation = Quaternion.Euler(0, -90, 0);
         
         gameObject.SetActive(true);
-        _stateMachine.Enter<FreeWalk>();
+        _stateMachine.Enter<FreeWalkState>();
     }
     
     private void PlayerDiedEventHandler(PlayerDiedEvent obj)
     {
-        _stateMachine.Enter<PlayerDeath>();
+        _stateMachine.Enter<PlayerDeathState>();
     }
 
     private void OnDestroy()

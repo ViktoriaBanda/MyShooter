@@ -43,7 +43,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameStates\GameOverState.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerDiedEvent.cs" />
-     <Compile Include="Assets\Scripts\Player\States\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\Buffs\Health.cs" />
      <Compile Include="Assets\Scripts\GlobalConstants.cs" />
      <Compile Include="Assets\Scripts\Player\Health\HealthBar.cs" />
@@ -63,7 +62,7 @@
      <Compile Include="Assets\Scripts\Events\GameStartEvent.cs" />
      <Compile Include="Assets\Scripts\GameStates\GameState.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletPoolCreator.cs" />
-     <Compile Include="Assets\Scripts\Player\States\Shooting.cs" />
+     <Compile Include="Assets\Scripts\Player\States\ShootingState.cs" />
      <Compile Include="Assets\Scripts\Player\Characteristic.cs" />
      <Compile Include="Assets\Scripts\GameStates\GameController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
@@ -77,15 +76,16 @@
      <Compile Include="Assets\Scripts\Particles\GameObjectPool.cs" />
      <Compile Include="Assets\Scripts\Player\States\Behaviours\ShootingBehaviour.cs" />
      <Compile Include="Assets\Scripts\Buffs\BuffSound.cs" />
-     <Compile Include="Assets\Scripts\Enemies\States\Waiting.cs" />
+     <Compile Include="Assets\Scripts\Player\CharacteristicType.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\WaitingState.cs" />
      <Compile Include="Assets\Scripts\Player\CharacteristicManager.cs" />
      <Compile Include="Assets\Scripts\Buffs\Buff.cs" />
      <Compile Include="Assets\Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\EnemyAgrRegion.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletCollisionDetector.cs" />
-     <Compile Include="Assets\Scripts\Enemies\States\Death.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\DeathState.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
-     <Compile Include="Assets\Scripts\Player\States\FreeWalk.cs" />
+     <Compile Include="Assets\Scripts\Player\States\FreeWalkState.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Events\LevelWinEvent.cs" />
      <Compile Include="Assets\Scripts\Player\Targets.cs" />
@@ -96,10 +96,10 @@
      <Compile Include="Assets\Scripts\DeadEnemiesCounter.cs" />
      <Compile Include="Assets\Scripts\Particles\GameObjectsPool.cs" />
      <Compile Include="Assets\Scripts\Bullet\WeaponParticlesController.cs" />
-     <Compile Include="Assets\Scripts\Enemies\States\Moving.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\MovingState.cs" />
      <Compile Include="Assets\Scripts\Buffs\Bomb\Bomb.cs" />
-     <Compile Include="Assets\Scripts\Enemies\States\Attack.cs" />
-     <Compile Include="Assets\Scripts\Player\CharacteristicType.cs" />
+     <Compile Include="Assets\Scripts\Enemies\States\AttackState.cs" />
+     <Compile Include="Assets\Scripts\Player\States\PlayerDeathState.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

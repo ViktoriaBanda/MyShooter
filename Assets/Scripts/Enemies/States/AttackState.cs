@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Attack : MonoBehaviour, IState
+public class AttackState : MonoBehaviour, IState
 {
     private static readonly int IsAttack = Animator.StringToHash("isAttack");
     
@@ -39,7 +39,7 @@ public class Attack : MonoBehaviour, IState
     {
         if (collision.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            _stateMachine.Enter<Moving>();
+            _stateMachine.Enter<MovingState>();
         }
     }
 }

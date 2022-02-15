@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Moving : MonoBehaviour, IState
+public class MovingState : MonoBehaviour, IState
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
     
@@ -45,7 +45,7 @@ public class Moving : MonoBehaviour, IState
         if (collision.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
             EventStreams.Game.Publish(new EnemyCollisionEvent(collision.gameObject));
-            _stateMachine.Enter<Attack>();
+            _stateMachine.Enter<AttackState>();
         }
     }
 

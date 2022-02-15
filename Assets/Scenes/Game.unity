@@ -3303,7 +3303,8 @@ PrefabInstance:
       propertyPath: _playerSpawnPosition
       value: 
       objectReference: {fileID: 1741548507}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8174859836385132922, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
 --- !u!1001 &8649987665745726338
 PrefabInstance:

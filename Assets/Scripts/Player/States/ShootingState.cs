@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Shooting : MonoBehaviour, IState
+public class ShootingState : MonoBehaviour, IState
 {
     private static readonly int IsShoot = Animator.StringToHash("isShoot");
 
@@ -33,6 +33,6 @@ public class Shooting : MonoBehaviour, IState
 
     private void ChangeState()
     {
-        _stateMachine.Enter<FreeWalk>();
+        _stateMachine.Enter<FreeWalkState>();
     }
 }
