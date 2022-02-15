@@ -11,16 +11,11 @@ public class DeathState : MonoBehaviour, IState
 
     public void OnEnter()
     {
-       EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
+       //EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
        gameObject.SetActive(false);
     }
 
     public void OnExit()
-    {
-        
-    }
-
-    public void UpdateState()
     {
         
     }

@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00f309c374767924c9954bdd5c8c2e48, type: 3}
-  m_Name: CharacteristicManager
+  m_Name: PlayerCharacteristicManager
   m_EditorClassIdentifier: 

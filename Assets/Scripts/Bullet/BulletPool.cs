@@ -1,25 +1,35 @@
+using Pool;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
-public class BulletPoolReloader : MonoBehaviour
+public class BulletPool : MonoBehaviour
 {
+    public MonoBehaviourPool<Bullet> Pool { get; private set; }
+    
     [SerializeField] 
-    private BulletPoolCreator _bulletPoolCreator;
-
+    private Bullet _bulletPrefab;
+    
+    [SerializeField]
+    private int _poolSize = 30;
+    
     private CompositeDisposable _subscriptions;
+    
+    private Transform _bulletSpawnPoint;
     
     private void Awake()
     {
+        Pool = new MonoBehaviourPool<Bullet>(_bulletPrefab, _bulletSpawnPoint, _poolSize);
+        
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<BulletHitEvent>(BulletHitEventHandler)
         };
     }
-
+    
     private void BulletHitEventHandler(BulletHitEvent eventData)
     {
         var bulletToRelease = eventData.Bullet;
-        _bulletPoolCreator.BulletPool.Release(bulletToRelease);
+        Pool.Release(bulletToRelease);
     }
 
     private void OnDestroy()

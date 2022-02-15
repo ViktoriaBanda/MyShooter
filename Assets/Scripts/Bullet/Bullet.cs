@@ -5,6 +5,9 @@ public class Bullet : MonoBehaviour
     public Rigidbody Rigidbody => _rigidbody;
 
     public float Speed => _speed;
+    
+    [SerializeField]
+    private float _damageValue = 10f;
 
     [SerializeField]
     private Rigidbody _rigidbody;
@@ -14,6 +17,6 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        EventStreams.Game.Publish(new BulletHitEvent(this, collision.gameObject));
+        EventStreams.Game.Publish(new BulletHitEvent(this, collision.gameObject, _damageValue));
     }
 }

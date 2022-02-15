@@ -4,8 +4,11 @@ using UnityEngine;
 public class EnemyTakesDamageEvent : EventBase
 {
     public GameObject Enemy { get; }
-    public EnemyTakesDamageEvent(GameObject enemy)
+    public float DamageValue { get; set; }
+
+    public EnemyTakesDamageEvent(GameObject enemy, float damageValue)
     {
         Enemy = enemy;
+        DamageValue = damageValue;
     }
 }

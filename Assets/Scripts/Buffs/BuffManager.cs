@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuffManager : MonoBehaviour
 {
     [SerializeField] 
-    private CharacteristicManager _characteristicManager;
+    private CharacteristicManager _playerCharacteristicManager;
 
     private List<GameObject> _buffs;
     
@@ -41,7 +41,7 @@ public class BuffManager : MonoBehaviour
             return;    
         }
 
-        var characteristic = _characteristicManager.GetCharacteristicByType(eventData.Buff.Type);
+        var characteristic = _playerCharacteristicManager.GetCharacteristicByType(eventData.Buff.Type);
         characteristic.SetValue(characteristic.GetMaxValue());
     }
 

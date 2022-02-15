@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe4591e5b9c3fb4da6ef28ffb9c1aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
+  _playerCharacteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
 --- !u!4 &384452976
 Transform:
   m_ObjectHideFlags: 0
@@ -332,7 +332,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404313018}
-  - component: {fileID: 404313017}
   - component: {fileID: 404313019}
   - component: {fileID: 404313020}
   m_Layer: 0
@@ -342,19 +341,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &404313017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404313016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68b55f6dda1e50f458c2aad36d4e5a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPoolCreator: {fileID: 404313019}
 --- !u!4 &404313018
 Transform:
   m_ObjectHideFlags: 0
@@ -3248,9 +3234,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1770901589, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: bulletPool
+      value: 
+      objectReference: {fileID: 404313019}
+    - target: {fileID: 1770901589, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: _bulletPoolCreator
       value: 
       objectReference: {fileID: 404313019}
+    - target: {fileID: 418353959855272802, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1167624115923239891, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: m_Name
       value: Player

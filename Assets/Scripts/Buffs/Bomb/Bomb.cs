@@ -4,6 +4,9 @@ public class Bomb : Buff
 {
     [SerializeField] 
     private Targets _bombTargets;
+
+    [SerializeField]
+    private float _damageValue = 10f;
     
     protected override void OnTriggerEnter(Collider collider)
     {
@@ -22,7 +25,7 @@ public class Bomb : Buff
 
         while (targets.Count > 0)
         {
-           EventStreams.Game.Publish(new EnemyTakesDamageEvent(targets[^1]));
+           targets[^1].GetComponent<Enemies.HealthController>().DecreaseHealth(_damageValue);
         }
     }
 }

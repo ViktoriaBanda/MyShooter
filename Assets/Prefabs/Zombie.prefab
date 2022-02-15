@@ -1137,13 +1137,15 @@ GameObject:
   - component: {fileID: 7723499261083412392}
   - component: {fileID: 7723499261073590766}
   - component: {fileID: 5629410736307550801}
+  - component: {fileID: -302026960685872581}
   - component: {fileID: 2183046902347343422}
   - component: {fileID: -306973332991023602}
   - component: {fileID: 8627268832593318944}
   - component: {fileID: 4550855754209453749}
   - component: {fileID: 3083114754581399683}
   - component: {fileID: 893225367823179894}
-  - component: {fileID: -302026960685872581}
+  - component: {fileID: -7815584532473488407}
+  - component: {fileID: 5875919401032545254}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
@@ -1202,6 +1204,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6396557, z: 0.7799034}
   m_Center: {x: -2.1069436e-16, y: 0.8081667, z: 0.041268766}
+--- !u!54 &-302026960685872581
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723499261083122632}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!195 &2183046902347343422
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1277,6 +1295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 7723499261073590766}
+  _damageValue: 5
 --- !u!114 &893225367823179894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,22 +1308,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e4681bd1ad7d6468381af57ab142d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &-302026960685872581
-Rigidbody:
+--- !u!114 &-7815584532473488407
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7723499261083122632}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c522511b8f44a0894fea502378bab0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _zombie: {fileID: 5875919401032545254}
+  _maxHealth: 10
+--- !u!114 &5875919401032545254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723499261083122632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ab37c1c392d0f4c967086b6969216e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characteristicManager: {fileID: 11400000, guid: ce9fafd2f7da0634eb4e6cd0d4754425, type: 2}
+  _characteristics:
+  - _name: Health
+    _type: 0
+    _maxValue: 10
+    _currentValue: 10
 --- !u!1 &7723499261083122636
 GameObject:
   m_ObjectHideFlags: 0

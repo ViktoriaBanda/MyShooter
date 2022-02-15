@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour
     private AudioClip _audioClip;
     
     [SerializeField] 
-    private BulletPoolCreator _bulletPoolCreator;
+    private BulletPool bulletPool;
     
     [SerializeField]
     private float _reloadTimer = 0.2f;
@@ -43,7 +43,7 @@ public class Weapon : MonoBehaviour
     {
         if (_isTimerOver)
         {
-            _currentBullet = _bulletPoolCreator.BulletPool.Take();
+            _currentBullet = bulletPool.Pool.Take();
             AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             Shoot();
             

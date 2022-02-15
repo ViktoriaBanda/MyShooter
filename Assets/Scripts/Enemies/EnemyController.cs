@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler),
-            EventStreams.Game.Subscribe<EnemyTakesDamageEvent>(EnemyTakesDamageEventHandler)
+            EventStreams.Game.Subscribe<EnemyDiedEvent>(EnemyDiedEventHandler)
         };
     }
 
@@ -45,7 +45,7 @@ public class EnemyController : MonoBehaviour
         _subscriptions.Dispose();
     }
     
-    private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
+    private void EnemyDiedEventHandler(EnemyDiedEvent eventData)
     {
         if (eventData.Enemy == gameObject)
         {

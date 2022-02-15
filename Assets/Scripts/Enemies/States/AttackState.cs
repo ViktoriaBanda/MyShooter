@@ -3,14 +3,12 @@ using UnityEngine;
 public class AttackState : MonoBehaviour, IState
 {
     private static readonly int IsAttack = Animator.StringToHash("isAttack");
-    
-    private StateMachine _stateMachine;
-    
-    [SerializeField]
-    private Animator _animator;
 
-    [SerializeField] 
-    private float _damageValue = 5f;
+    private StateMachine _stateMachine;
+
+    [SerializeField] private Animator _animator;
+
+    [SerializeField] private float _damageValue = 5f;
 
     public void Initialize(StateMachine stateMachine)
     {

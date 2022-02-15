@@ -17,7 +17,7 @@ public class BulletCollisionDetector : MonoBehaviour
     {
         if (eventData.HittedObject.CompareTag(GlobalConstants.ENEMY_TAG))
         {
-            EventStreams.Game.Publish(new EnemyTakesDamageEvent(eventData.HittedObject));
+            EventStreams.Game.Publish(new EnemyTakesDamageEvent(eventData.HittedObject, eventData.DamageValue));
         }
     }
 
