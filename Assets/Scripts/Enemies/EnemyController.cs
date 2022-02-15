@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
     
     private void EnemyDiedEventHandler(EnemyDiedEvent eventData)
     {
-        if (eventData.Enemy == gameObject)
+        if (eventData.Enemy.gameObject == gameObject)
         {
             _stateMachine.Enter<DeathState>();
         }

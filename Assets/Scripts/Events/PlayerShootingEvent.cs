@@ -1,10 +1,10 @@
+using Enemies;
 using SimpleEventBus.Events;
-using UnityEngine;
 
 public class PlayerShootingEvent : EventBase
 {
-    public GameObject Enemy { get; }
-    public PlayerShootingEvent(GameObject enemy)
+    public Zombie Enemy { get; }
+    public PlayerShootingEvent(Zombie enemy)
     {
         Enemy = enemy;
     }

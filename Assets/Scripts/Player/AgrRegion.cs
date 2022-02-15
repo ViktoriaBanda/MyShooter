@@ -1,16 +1,17 @@
 using System;
+using Enemies;
 using UnityEngine;
 
 public class AgrRegion : MonoBehaviour
 {
-    public event Action<GameObject> OnEnemyGetIntoAgrRegion;
-    public event Action<GameObject> OnEnemyGetOutAgrRegion;
+    public event Action<Zombie> OnEnemyGetIntoAgrRegion;
+    public event Action<Zombie> OnEnemyGetOutAgrRegion;
     
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag(GlobalConstants.ENEMY_TAG))
         {
-            OnEnemyGetIntoAgrRegion?.Invoke(collider.gameObject);
+            OnEnemyGetIntoAgrRegion?.Invoke(collider.gameObject.GetComponent<Zombie>());
         }
     }
     
@@ -18,7 +19,7 @@ public class AgrRegion : MonoBehaviour
     {
         if (collider.gameObject.CompareTag(GlobalConstants.ENEMY_TAG))
         {
-            OnEnemyGetOutAgrRegion?.Invoke(collider.gameObject);
+            OnEnemyGetOutAgrRegion?.Invoke(collider.gameObject.GetComponent<Zombie>());
         }
     }
 }

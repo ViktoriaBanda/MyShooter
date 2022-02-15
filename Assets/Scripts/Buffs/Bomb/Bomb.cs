@@ -25,7 +25,7 @@ public class Bomb : Buff
 
         while (targets.Count > 0)
         {
-           targets[^1].GetComponent<Enemies.HealthController>().DecreaseHealth(_damageValue);
+           targets[^1].TakeDamage(_damageValue);
         }
     }
 }

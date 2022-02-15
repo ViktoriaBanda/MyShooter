@@ -1,15 +1,18 @@
 using System.Collections.Generic;
+using Enemies;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Targets : MonoBehaviour
 {
-    public List<GameObject> Enemies => _enemies;
+    //public List<GameObject> Enemies => _enemies;
+    public List<Zombie> Enemies => _enemies;
     
     [SerializeField] 
     private AgrRegion _agrRegion;
     
-    private List<GameObject> _enemies = new();
+    //private List<GameObject> _enemies = new();
+    private List<Zombie> _enemies = new();
     
     private CompositeDisposable _subscriptions;
 
@@ -30,7 +33,7 @@ public class Targets : MonoBehaviour
         return _enemies.Count;
     }
     
-    public GameObject FindNearestEnemy()
+    public Zombie FindNearestEnemy()
     {
         var nearestEnemy = _enemies[0];
         var minDistance = Vector3.Distance(transform.position, nearestEnemy.transform.position);
@@ -48,12 +51,12 @@ public class Targets : MonoBehaviour
         return nearestEnemy;
     }
     
-    private void AddEnemy(GameObject enemy)
+    private void AddEnemy(Zombie enemy)
     {
         _enemies.Add(enemy);
     }
     
-    private void RemoveEnemy(GameObject enemy)
+    private void RemoveEnemy(Zombie enemy)
     {
         _enemies.Remove(enemy);
     }

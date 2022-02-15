@@ -25,6 +25,11 @@ namespace Enemies
             };
         }
 
+        public void TakeDamage(float damage)
+        {
+            OnTakeDamage?.Invoke(damage);
+        }
+
         private void EnemyTakesDamageEventHandler(EnemyTakesDamageEvent eventData)
         {
             if (eventData.Enemy == gameObject)

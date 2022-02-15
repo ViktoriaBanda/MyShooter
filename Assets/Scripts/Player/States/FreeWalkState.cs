@@ -1,3 +1,4 @@
+using Enemies;
 using UnityEngine;
 
 public class FreeWalkState : MonoBehaviour,IState
@@ -25,7 +26,7 @@ public class FreeWalkState : MonoBehaviour,IState
         agrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
 
-    private void ChangeState(GameObject enemy)
+    private void ChangeState(Zombie enemy)
     {
         _stateMachine.Enter<ShootingState>();
     }

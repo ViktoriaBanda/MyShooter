@@ -32,7 +32,7 @@ namespace Enemies
 
             if (_currentHealth <= 0)
             {
-                EventStreams.Game.Publish(new EnemyDiedEvent(gameObject));
+                EventStreams.Game.Publish(new EnemyDiedEvent(_zombie));
             }
         }
     
