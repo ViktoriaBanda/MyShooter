@@ -9,6 +9,9 @@ public class Attack : MonoBehaviour, IState
     [SerializeField]
     private Animator _animator;
 
+    [SerializeField] 
+    private float _damageValue = 5f;
+
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -24,16 +27,11 @@ public class Attack : MonoBehaviour, IState
         _animator.SetBool(IsAttack, false);
     }
 
-    public void UpdateState()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag(GlobalConstants.PLAYER_TAG))
         {
-            EventStreams.Game.Publish(new PlayerTakesDamageEvent());
+            EventStreams.Game.Publish(new PlayerTakesDamageEvent(_damageValue));
         }
     }
 

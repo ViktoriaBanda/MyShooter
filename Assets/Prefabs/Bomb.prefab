@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3205269228423765282}
   - component: {fileID: 8526067711445844324}
   - component: {fileID: 6962402980902302947}
-  - component: {fileID: 2133700935}
+  - component: {fileID: 1763594845}
   m_Layer: 0
   m_Name: BombAgrRegion
   m_TagString: Untagged
@@ -99,7 +99,7 @@ CapsuleCollider:
   m_Height: 2.0000012
   m_Direction: 1
   m_Center: {x: 0.000026762496, y: -0.000007033353, z: -0.0000029504292}
---- !u!114 &2133700935
+--- !u!114 &1763594845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5302434704000461069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ea2be3cacdd6c46bb4e0b43386c755, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd4705ce5b38654290f0b2613f462f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8649987665376539384
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 8649987665376112348}
   - component: {fileID: 7376489077928797202}
   - component: {fileID: 1779415424}
-  - component: {fileID: 1779415425}
+  - component: {fileID: 1778918761}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -305,7 +305,7 @@ Transform:
   m_GameObject: {fileID: 8649987665376539388}
   m_LocalRotation: {x: 0.41174892, y: 0.54298407, z: 0.7165955, w: 0.14873537}
   m_LocalPosition: {x: -44.14, y: 0.39, z: -12.95}
-  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_LocalScale: {x: 0.010000003, y: 0.010000002, z: 0.010000002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8649987665376112346}
@@ -340,8 +340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98e0e67a76b6294da712405ca9f0632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bombTargets: {fileID: 1779415425}
---- !u!114 &1779415425
+  _bombTargets: {fileID: 1778918761}
+--- !u!114 &1778918761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,10 +350,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8649987665376539388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f0b9b0a49fcb64428f7e4e609a671b9, type: 3}
+  m_Script: {fileID: 11500000, guid: a89ef74db83693448a31e3eb0e6cf9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bombAgrRegion: {fileID: 2133700935}
+  _agrRegion: {fileID: 1763594845}
 --- !u!1001 &4258616072146778580
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,9 +7,6 @@ public class HealthController : MonoBehaviour
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
 
-    [SerializeField] 
-    private float _healthReductionValue = 5;
-    
     private float _currentHealth;
     private float _maxHealth;
 
@@ -32,7 +29,7 @@ public class HealthController : MonoBehaviour
         var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
         _currentHealth = currentHealth.GetCurrentValue();
         
-        _currentHealth -= _healthReductionValue;
+        _currentHealth -= eventData.DamageValue;
         currentHealth.SetValue(_currentHealth);
 
         if (_currentHealth <= 0)
