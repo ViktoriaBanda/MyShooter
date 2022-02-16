@@ -6,6 +6,9 @@ public class ShootingBehaviour : MonoBehaviour
     public event Action AllEnemiesHaveKilledEvent;
     
     [SerializeField] 
+    private Weapon _weapon;
+    
+    [SerializeField] 
     private Targets targets;
     
     private bool _isShoot;
@@ -25,8 +28,8 @@ public class ShootingBehaviour : MonoBehaviour
                 
         var nearestEnemy = targets.FindNearestEnemy();
         transform.LookAt(nearestEnemy.transform);
-        
-        EventStreams.Game.Publish(new PlayerShootingEvent(nearestEnemy));
+
+        _weapon.StartShooting();
     }
 
     public void StartAutoShoot()

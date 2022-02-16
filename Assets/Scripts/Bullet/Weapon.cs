@@ -1,16 +1,16 @@
+using System;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] 
-    private AudioClip _audioClip;
+    public event Action OnShooting;
     
-    [SerializeField] 
-    private BulletPool bulletPool;
-    
-    [SerializeField]
-    private float _reloadTimer = 0.2f;
+    [SerializeField] private AudioClip _audioClip;
+
+    [SerializeField] private BulletPool bulletPool;
+
+    [SerializeField] private float _reloadTimer = 0.2f;
 
     private float _currentTimer = 0;
 
@@ -18,16 +18,6 @@ public class Weapon : MonoBehaviour
 
     private Bullet _currentBullet;
 
-    private CompositeDisposable _subscriptions;
-
-    private void Awake()
-    {
-        _subscriptions = new CompositeDisposable
-        {
-            EventStreams.Game.Subscribe<PlayerShootingEvent>(PlayerShootingEventHandler)
-        };
-    }
-    
     private void Update()
     {
         if (_currentTimer > 0)
@@ -39,29 +29,28 @@ public class Weapon : MonoBehaviour
         _isTimerOver = true;
     }
 
-    private void PlayerShootingEventHandler(PlayerShootingEvent eventData)
+    public void StartShooting()
     {
         if (_isTimerOver)
         {
             _currentBullet = bulletPool.Pool.Take();
             AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             Shoot();
-            
+
             _currentTimer = _reloadTimer;
             _isTimerOver = false;
         }
     }
-    
+
     private void Shoot()
     {
+        OnShooting?.Invoke();
+
         _currentBullet.Rigidbody.useGravity = false;
         _currentBullet.transform.position = transform.position;
         _currentBullet.transform.rotation = transform.rotation;
         _currentBullet.Rigidbody.velocity = transform.forward * _currentBullet.Speed;
     }
-
-    private void OnDestroy()
-    {
-        _subscriptions.Dispose();
-    }
 }
+
+    

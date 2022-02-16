@@ -47,11 +47,11 @@
      <Compile Include="Assets\Scripts\GlobalConstants.cs" />
      <Compile Include="Assets\Scripts\Player\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Events\EventStreams.cs" />
-     <Compile Include="Assets\Scripts\Events\PlayerShootingEvent.cs" />
      <Compile Include="Assets\Scripts\Particles\ParticlesController.cs" />
      <Compile Include="Assets\Scripts\Player\States\Behaviours\MovementBehaviour.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyCollisionEvent.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Enemies\HealthController.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\GameStates\StartState.cs" />
      <Compile Include="Assets\Scripts\Events\BombExplodeEvent.cs" />
@@ -71,7 +71,8 @@
      <Compile Include="Assets\Scripts\Finish.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyDiedEvent.cs" />
      <Compile Include="Assets\Scripts\GameStates\WinState.cs" />
-     <Compile Include="Assets\Scripts\Buffs\BuffManager.cs" />
+     <Compile Include="Assets\Scripts\Buffs\BuffsManager.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Zombie.cs" />
      <Compile Include="Assets\Scripts\Particles\GameObjectPool.cs" />
      <Compile Include="Assets\Scripts\Player\States\Behaviours\ShootingBehaviour.cs" />
      <Compile Include="Assets\Scripts\Buffs\BuffSound.cs" />
@@ -88,6 +89,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Events\LevelWinEvent.cs" />
      <Compile Include="Assets\Scripts\Player\Targets.cs" />
+     <Compile Include="Assets\Scripts\Player\States\PlayerDeathState.cs" />
      <Compile Include="Assets\Scripts\Events\BuffAchieveEvent.cs" />
      <Compile Include="Assets\Scripts\Bullet\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
@@ -98,9 +100,7 @@
      <Compile Include="Assets\Scripts\Enemies\States\MovingState.cs" />
      <Compile Include="Assets\Scripts\Buffs\Bomb\Bomb.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\AttackState.cs" />
-     <Compile Include="Assets\Scripts\Player\States\PlayerDeathState.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Zombie.cs" />
-     <Compile Include="Assets\Scripts\Enemies\HealthController.cs" />
+     <Compile Include="Assets\Scripts\Buffs\BuffsViewManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

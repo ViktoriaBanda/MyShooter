@@ -211,6 +211,17 @@ Transform:
   m_Father: {fileID: 971439838}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &369410026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1770901589, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+  m_PrefabInstance: {fileID: 8643469075091210049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d7c1450fe3ea949a2046a135235cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &373653965
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,8 +299,9 @@ GameObject:
   m_Component:
   - component: {fileID: 384452976}
   - component: {fileID: 384452975}
+  - component: {fileID: 384452977}
   m_Layer: 0
-  m_Name: BuffManager
+  m_Name: BuffsManagers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,6 +335,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384452977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384452974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3497eac6b7f7b4e8c122764af4d360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &404313016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,6 +3265,10 @@ PrefabInstance:
       propertyPath: _bulletPoolCreator
       value: 
       objectReference: {fileID: 404313019}
+    - target: {fileID: 1770901593, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 369410026}
     - target: {fileID: 418353959855272802, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3293,6 +3321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3387855242079917880, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 369410026}
     - target: {fileID: 6445289645442370964, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: _playerSpawnPosition
       value: 

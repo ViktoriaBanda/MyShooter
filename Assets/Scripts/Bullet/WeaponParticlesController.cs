@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class WeaponParticlesController : MonoBehaviour
@@ -8,17 +5,15 @@ public class WeaponParticlesController : MonoBehaviour
     [SerializeField]
     private GameObject _particle;
     
-    private CompositeDisposable _subscriptions;
-    
+    [SerializeField] 
+    private Weapon _weapon;
+
     private void Awake()
     {
-        _subscriptions = new CompositeDisposable
-        {
-           EventStreams.Game.Subscribe<PlayerShootingEvent>(PlayerShootingEventHandler)
-        };
+        _weapon.OnShooting += PlayParticles;
     }
     
-    private void PlayerShootingEventHandler(PlayerShootingEvent eventData)
+    private void PlayParticles()
     {
         _particle.transform.position = transform.position;
          
@@ -28,6 +23,6 @@ public class WeaponParticlesController : MonoBehaviour
     
     private void OnDestroy()
     {
-        _subscriptions.Dispose();
+        _weapon.OnShooting -= PlayParticles;
     }
 }
