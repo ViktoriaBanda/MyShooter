@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 8540467772668940633}
   - component: {fileID: 6911269716435914307}
   - component: {fileID: 3387855242079917880}
-  - component: {fileID: 7478225696585539836}
+  - component: {fileID: 7478225696585539847}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1063,7 +1063,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &-5545538167555178184
 MonoBehaviour:
@@ -1112,8 +1112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f914bc82a16ffff4f9265081318b369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agrRegion: {fileID: 8865058148759872411}
-  _movementBehaviour: {fileID: 7478225696585539836}
+  _agrRegion: {fileID: 8865058148759872411}
+  _movementBehaviour: {fileID: 7478225696585539847}
 --- !u!114 &8540467772668940633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b450bf06ff421d141a11e9cbcf4002ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementBehaviour: {fileID: 7478225696585539836}
+  _movementBehaviour: {fileID: 7478225696585539847}
 --- !u!114 &3387855242079917880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,8 +1153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9b0e3d194896d4eab9e1b2cd227966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weapon: {fileID: 1770901589}
   targets: {fileID: 1770901591}
---- !u!114 &7478225696585539836
+--- !u!114 &7478225696585539847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1163,11 +1164,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167624115923239891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd4e4f4c93a8b74dbf59e4d6d386f09, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eb2d3b05636474989394aec8817dd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1167624115915960821}
   _characteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
+  _animator: {fileID: 1167624115915960821}
+  _joystick: {fileID: 0}
+  _rigidbody: {fileID: 8347810070049888989}
 --- !u!1 &1167624115923239895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: f80ae128dd224bc4d970435994142ecc, type: 3}
-  _bulletPoolCreator: {fileID: 0}
+  bulletPool: {fileID: 0}
   _reloadTimer: 0.2
 --- !u!114 &1770901591
 MonoBehaviour:
@@ -1431,6 +1434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particle: {fileID: 8266686520334137178}
+  _weapon: {fileID: 1770901589}
 --- !u!1001 &6631034236965099907
 PrefabInstance:
   m_ObjectHideFlags: 0

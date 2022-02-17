@@ -1,148 +1,133 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
+namespace Joystick
 {
-    public float Horizontal { get { return (snapX) ? SnapFloat(input.x, AxisOptions.Horizontal) : input.x; } }
-    public float Vertical { get { return (snapY) ? SnapFloat(input.y, AxisOptions.Vertical) : input.y; } }
-    public Vector2 Direction { get { return new Vector2(Horizontal, Vertical); } }
-
-    public float HandleRange
+    public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
     {
-        get { return handleRange; }
-        set { handleRange = Mathf.Abs(value); }
-    }
+        public float Horizontal => _snapX ? SnapFloat(input.x, AxisOptions.Horizontal) : input.x;
+        public float Vertical => _snapY ? SnapFloat(input.y, AxisOptions.Vertical) : input.y;
 
-    public float DeadZone
-    {
-        get { return deadZone; }
-        set { deadZone = Mathf.Abs(value); }
-    }
-
-    public AxisOptions AxisOptions { get { return AxisOptions; } set { axisOptions = value; } }
-    public bool SnapX { get { return snapX; } set { snapX = value; } }
-    public bool SnapY { get { return snapY; } set { snapY = value; } }
-
-    [SerializeField] private float handleRange = 1;
-    [SerializeField] private float deadZone = 0;
-    [SerializeField] private AxisOptions axisOptions = AxisOptions.Both;
-    [SerializeField] private bool snapX = false;
-    [SerializeField] private bool snapY = false;
-
-    [SerializeField] protected RectTransform background = null;
-    [SerializeField] private RectTransform handle = null;
-    private RectTransform baseRect = null;
-
-    private Canvas canvas;
-    private Camera cam;
-
-    private Vector2 input = Vector2.zero;
-
-    protected virtual void Start()
-    {
-        HandleRange = handleRange;
-        DeadZone = deadZone;
-        baseRect = GetComponent<RectTransform>();
-        canvas = GetComponentInParent<Canvas>();
-        if (canvas == null)
-            Debug.LogError("The Joystick is not placed inside a canvas");
-
-        Vector2 center = new Vector2(0.5f, 0.5f);
-        background.pivot = center;
-        handle.anchorMin = center;
-        handle.anchorMax = center;
-        handle.pivot = center;
-        handle.anchoredPosition = Vector2.zero;
-    }
-
-    public virtual void OnPointerDown(PointerEventData eventData)
-    {
-        OnDrag(eventData);
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        cam = null;
-        if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
-            cam = canvas.worldCamera;
-
-        Vector2 position = RectTransformUtility.WorldToScreenPoint(cam, background.position);
-        Vector2 radius = background.sizeDelta / 2;
-        input = (eventData.position - position) / (radius * canvas.scaleFactor);
-        FormatInput();
-        HandleInput(input.magnitude, input.normalized, radius, cam);
-        handle.anchoredPosition = input * radius * handleRange;
-    }
-
-    protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
-    {
-        if (magnitude > deadZone)
+        public float HandleRange
         {
-            if (magnitude > 1)
-                input = normalised;
+            set => _handleRange = Mathf.Abs(value);
         }
-        else
-            input = Vector2.zero;
-    }
 
-    private void FormatInput()
-    {
-        if (axisOptions == AxisOptions.Horizontal)
-            input = new Vector2(input.x, 0f);
-        else if (axisOptions == AxisOptions.Vertical)
-            input = new Vector2(0f, input.y);
-    }
-
-    private float SnapFloat(float value, AxisOptions snapAxis)
-    {
-        if (value == 0)
-            return value;
-
-        if (axisOptions == AxisOptions.Both)
+        public float DeadZone
         {
-            float angle = Vector2.Angle(input, Vector2.up);
-            if (snapAxis == AxisOptions.Horizontal)
-            {
-                if (angle < 22.5f || angle > 157.5f)
-                    return 0;
-                else
-                    return (value > 0) ? 1 : -1;
-            }
-            else if (snapAxis == AxisOptions.Vertical)
-            {
-                if (angle > 67.5f && angle < 112.5f)
-                    return 0;
-                else
-                    return (value > 0) ? 1 : -1;
-            }
-            return value;
+            set => _deadZone = Mathf.Abs(value);
         }
-        else
+
+        [SerializeField] private float _handleRange = 1;
+        [SerializeField] private float _deadZone = 0;
+        [SerializeField] private AxisOptions _axisOptions = AxisOptions.Both;
+        [SerializeField] private bool _snapX;
+        [SerializeField] private bool _snapY;
+
+        [SerializeField] protected RectTransform _background;
+        [SerializeField] private RectTransform _handle;
+    
+        private Canvas _canvas;
+        private Camera _camera;
+
+        private Vector2 input = Vector2.zero;
+
+        protected virtual void Start()
         {
-            if (value > 0)
-                return 1;
-            if (value < 0)
+            HandleRange = _handleRange;
+            DeadZone = _deadZone;
+            _canvas = GetComponentInParent<Canvas>();
+            if (_canvas == null)
+                Debug.LogError("The Joystick is not placed inside a canvas");
+
+            Vector2 center = new Vector2(0.5f, 0.5f);
+            _background.pivot = center;
+            _handle.anchorMin = center;
+            _handle.anchorMax = center;
+            _handle.pivot = center;
+            _handle.anchoredPosition = Vector2.zero;
+        }
+
+        public virtual void OnPointerDown(PointerEventData eventData)
+        {
+            OnDrag(eventData);
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            _camera = null;
+            if (_canvas.renderMode == RenderMode.ScreenSpaceCamera)
+                _camera = _canvas.worldCamera;
+
+            Vector2 position = RectTransformUtility.WorldToScreenPoint(_camera, _background.position);
+            Vector2 radius = _background.sizeDelta / 2;
+            input = (eventData.position - position) / (radius * _canvas.scaleFactor);
+            FormatInput();
+            HandleInput(input.magnitude, input.normalized);
+            _handle.anchoredPosition = input * radius * _handleRange;
+        }
+
+        protected virtual void HandleInput(float magnitude, Vector2 normalised)
+        {
+            if (magnitude > _deadZone)
+            {
+                if (magnitude > 1)
+                {
+                    input = normalised;
+                }
+            }
+            else
+            {
+                input = Vector2.zero;
+            }
+        }
+
+        private void FormatInput()
+        {
+            switch (_axisOptions)
+            {
+                case AxisOptions.Horizontal:
+                    input = new Vector2(input.x, 0f);
+                    break;
+                case AxisOptions.Vertical:
+                    input = new Vector2(0f, input.y);
+                    break;
+            }
+        }
+
+        private float SnapFloat(float value, AxisOptions snapAxis)
+        {
+            if (value == 0)
+            {
+                return value;
+            }
+
+            if (_axisOptions != AxisOptions.Both)
+            {
                 return -1;
+            }
+            
+            var angle = Vector2.Angle(input, Vector2.up);
+                
+            switch (snapAxis)
+            {
+                case AxisOptions.Horizontal when angle < 22.5f || angle > 157.5f:
+                    return 0;
+                case AxisOptions.Horizontal:
+                    return value > 0 ? 1 : -1;
+                case AxisOptions.Vertical when angle > 67.5f && angle < 112.5f:
+                    return 0;
+                case AxisOptions.Vertical:
+                    return value > 0 ? 1 : -1;
+                default:
+                    return value;
+            }
         }
-        return 0;
-    }
 
-    public virtual void OnPointerUp(PointerEventData eventData)
-    {
-        input = Vector2.zero;
-        handle.anchoredPosition = Vector2.zero;
-    }
-
-    protected Vector2 ScreenPointToAnchoredPosition(Vector2 screenPosition)
-    {
-        Vector2 localPoint = Vector2.zero;
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(baseRect, screenPosition, cam, out localPoint))
+        public virtual void OnPointerUp(PointerEventData eventData)
         {
-            Vector2 pivotOffset = baseRect.pivot * baseRect.sizeDelta;
-            return localPoint - (background.anchorMax * baseRect.sizeDelta) + pivotOffset;
+            input = Vector2.zero;
+            _handle.anchoredPosition = Vector2.zero;
         }
-        return Vector2.zero;
     }
 }
-
-public enum AxisOptions { Both, Horizontal, Vertical }

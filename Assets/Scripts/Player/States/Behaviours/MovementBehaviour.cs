@@ -3,6 +3,7 @@ using UnityEngine;
 public class MovementBehaviour : MonoBehaviour
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
+    
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
     
@@ -10,7 +11,7 @@ public class MovementBehaviour : MonoBehaviour
     private Animator _animator;
 
     [SerializeField]
-    private FixedJoystick _joystick;
+    private Joystick.Joystick _joystick;
     
     [SerializeField]
     private Rigidbody _rigidbody;
