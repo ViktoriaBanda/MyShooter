@@ -4,7 +4,7 @@ using UnityEngine;
 public class FreeWalkState : MonoBehaviour,IState
 {
     [SerializeField] 
-    private AgrRegion agrRegion;
+    private AgrRegion _agrRegion;
     
     [SerializeField] 
     private MovementBehaviour _movementBehaviour;
@@ -18,12 +18,12 @@ public class FreeWalkState : MonoBehaviour,IState
     public void OnEnter()
     {
         _movementBehaviour.StartMove();
-        agrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
+        _agrRegion.OnEnemyGetIntoAgrRegion += ChangeState;
     }
 
     public void OnExit()
     {
-        agrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
+        _agrRegion.OnEnemyGetIntoAgrRegion -= ChangeState;
     }
 
     private void ChangeState(Zombie enemy)

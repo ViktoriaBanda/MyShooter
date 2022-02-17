@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour
 
     [SerializeField]
     private Scrollbar _healthBar;
-    
+
     private float _currentHealth;
 
     private void Update()

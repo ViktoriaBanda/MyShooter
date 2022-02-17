@@ -43,12 +43,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameStates\GameOverState.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerDiedEvent.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Scripts\Buffs\Health.cs" />
      <Compile Include="Assets\Scripts\GlobalConstants.cs" />
      <Compile Include="Assets\Scripts\Player\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Events\EventStreams.cs" />
      <Compile Include="Assets\Scripts\Particles\ParticlesController.cs" />
-     <Compile Include="Assets\Scripts\Player\States\Behaviours\MovementBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Player\States\Behaviours\MovementBehaviourKeyboard.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyCollisionEvent.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Enemies\HealthController.cs" />
@@ -63,15 +64,19 @@
      <Compile Include="Assets\Scripts\GameStates\GameState.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletPool.cs" />
      <Compile Include="Assets\Scripts\Player\States\ShootingState.cs" />
+     <Compile Include="Assets\Scripts\Buffs\BuffsViewManager.cs" />
      <Compile Include="Assets\Scripts\Player\Characteristic.cs" />
      <Compile Include="Assets\Scripts\GameStates\GameController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerTakesDamageEvent.cs" />
      <Compile Include="Assets\Scripts\Player\AgrRegion.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\Scripts\Finish.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyDiedEvent.cs" />
      <Compile Include="Assets\Scripts\GameStates\WinState.cs" />
      <Compile Include="Assets\Scripts\Buffs\BuffsManager.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Scripts\Enemies\Zombie.cs" />
      <Compile Include="Assets\Scripts\Particles\GameObjectPool.cs" />
      <Compile Include="Assets\Scripts\Player\States\Behaviours\ShootingBehaviour.cs" />
@@ -82,6 +87,8 @@
      <Compile Include="Assets\Scripts\Buffs\Buff.cs" />
      <Compile Include="Assets\Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\EnemyAgrRegion.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayer.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\Scripts\Bullet\BulletCollisionDetector.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\DeathState.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
@@ -92,6 +99,7 @@
      <Compile Include="Assets\Scripts\Player\States\PlayerDeathState.cs" />
      <Compile Include="Assets\Scripts\Events\BuffAchieveEvent.cs" />
      <Compile Include="Assets\Scripts\Bullet\Weapon.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
      <Compile Include="Assets\Scripts\Events\BulletHitEvent.cs" />
      <Compile Include="Assets\Scripts\DeadEnemiesCounter.cs" />
@@ -100,7 +108,7 @@
      <Compile Include="Assets\Scripts\Enemies\States\MovingState.cs" />
      <Compile Include="Assets\Scripts\Buffs\Bomb\Bomb.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\AttackState.cs" />
-     <Compile Include="Assets\Scripts\Buffs\BuffsViewManager.cs" />
+     <Compile Include="Assets\Scripts\Player\States\Behaviours\MovementBehaviour.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

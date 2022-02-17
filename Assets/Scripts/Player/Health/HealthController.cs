@@ -1,9 +1,12 @@
+using System;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
+    public event Action<float> OnHealthChanged;
+    
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
 
@@ -17,6 +20,7 @@ public class HealthController : MonoBehaviour
     private void Start()
     {
         _maxHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
+        OnHealthChanged?.Invoke(_currentHealth);
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerTakesDamageEventHandler),  
@@ -31,6 +35,8 @@ public class HealthController : MonoBehaviour
         
         _currentHealth -= eventData.DamageValue;
         currentHealth.SetValue(_currentHealth);
+        
+        OnHealthChanged?.Invoke(_currentHealth);
 
         if (_currentHealth <= 0)
         {
@@ -48,6 +54,8 @@ public class HealthController : MonoBehaviour
         _currentHealth = _maxHealth;
         var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
         currentHealth.SetValue(_currentHealth);
+        
+        OnHealthChanged?.Invoke(_currentHealth);
     }
 
     private void OnDestroy()

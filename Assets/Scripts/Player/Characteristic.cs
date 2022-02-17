@@ -18,6 +18,7 @@ public class Characteristic
     {
         return _type;
     }
+    
     public float GetMaxValue()
     {
         return _maxValue;
