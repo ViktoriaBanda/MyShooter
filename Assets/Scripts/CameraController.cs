@@ -5,12 +5,12 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] 
     private Vector3 _offset;
-    [SerializeField]
-    private Transform _playerTransform;
+    
+    public Transform PlayerTransform { get; set; }
     
     
     private void LateUpdate()
     {
-        transform.position = _playerTransform.position + _offset;
+        transform.position = PlayerTransform.position + _offset;
     }
 }

@@ -10,8 +10,7 @@ public class MovementBehaviour : MonoBehaviour
     [SerializeField]
     private Animator _animator;
 
-    [SerializeField]
-    private Joystick.Joystick _joystick;
+    public Joystick.Joystick Joystick { get; set; }
     
     [SerializeField]
     private Rigidbody _rigidbody;
@@ -27,13 +26,18 @@ public class MovementBehaviour : MonoBehaviour
     
     public void FixedUpdate()
     {
+        if (Joystick == null)
+        {
+            return;
+        }
+        
         if (!_isMove)
         {
             _animator.SetBool(IsMove, false);
             return;
         }
         
-        if (_joystick.Horizontal == 0 && _joystick.Vertical == 0)
+        if (Joystick.Horizontal == 0 && Joystick.Vertical == 0)
         {
             _animator.SetBool(IsMove, false);
             return;
@@ -42,7 +46,7 @@ public class MovementBehaviour : MonoBehaviour
         _animator.SetBool(IsMove, true);
         
         _rigidbody.velocity =
-            new Vector3(-_joystick.Vertical * _speed, _rigidbody.velocity.y, _joystick.Horizontal * _speed);
+            new Vector3(-Joystick.Vertical * _speed, _rigidbody.velocity.y, Joystick.Horizontal * _speed);
         transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
     }
     

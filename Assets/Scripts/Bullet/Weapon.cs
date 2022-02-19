@@ -5,10 +5,11 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public event Action OnShooting;
+
+    public BulletPool BulletPool { get; set; }
     
     [SerializeField] private AudioClip _audioClip;
 
-    [SerializeField] private BulletPool bulletPool;
 
     [SerializeField] private float _reloadTimer = 0.2f;
 
@@ -33,7 +34,7 @@ public class Weapon : MonoBehaviour
     {
         if (_isTimerOver)
         {
-            _currentBullet = bulletPool.Pool.Take();
+            _currentBullet = BulletPool.Pool.Take();
             AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             Shoot();
 

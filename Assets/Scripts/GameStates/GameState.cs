@@ -8,6 +8,10 @@ public class GameState : MonoBehaviour, IState
 
     private CompositeDisposable _subscriptions;
     
+    public Player Player { get; set; }
+    
+    public Vector3 SpawnPoint { get; set; } 
+    
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;
@@ -15,8 +19,11 @@ public class GameState : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        SceneManager.LoadScene(GlobalConstants.GAME_SCENE);
-
+        Player.transform.position = SpawnPoint;
+        Player.transform.rotation = Quaternion.Euler(0, -90, 0);
+           
+        Player.gameObject.SetActive(true);
+        
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler),
@@ -38,10 +45,4 @@ public class GameState : MonoBehaviour, IState
     {
         _stateMachine.Enter<WinState>();
     }
-    
-    public void UpdateState()
-    {
-        
-    }
-
 }

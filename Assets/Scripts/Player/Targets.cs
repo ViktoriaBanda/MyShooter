@@ -5,13 +5,11 @@ using UnityEngine;
 
 public class Targets : MonoBehaviour
 {
-    //public List<GameObject> Enemies => _enemies;
     public List<Zombie> Enemies => _enemies;
     
     [SerializeField] 
     private AgrRegion _agrRegion;
     
-    //private List<GameObject> _enemies = new();
     private List<Zombie> _enemies = new();
     
     private CompositeDisposable _subscriptions;

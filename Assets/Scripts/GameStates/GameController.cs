@@ -6,12 +6,19 @@ public class GameController : MonoBehaviour
 {
     private StateMachine _stateMachine;
     
+    [SerializeField]
+    private PlayerSettingsProvider _playerSettingsProvider;
+    
     private void Awake()
     {
+        //Инициализация ScriptableObject
+        _playerSettingsProvider.Initialize();
+        
         DontDestroyOnLoad(gameObject);
         
         _stateMachine = new StateMachine
         (
+            GetComponent<LobbyState>(),
             GetComponent<StartState>(),
             GetComponent<GameState>(),
             GetComponent<GameOverState>(),
@@ -19,6 +26,6 @@ public class GameController : MonoBehaviour
         );
 
         _stateMachine.Initialize();
-        _stateMachine.Enter<StartState>();
+        _stateMachine.Enter<LobbyState>();
     }
 }

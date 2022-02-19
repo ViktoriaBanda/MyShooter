@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9110f30e055f8743ad9232f0aa1fcee, type: 3}
+  m_Name: PlayerSettingsProvider
+  m_EditorClassIdentifier: 
+  _playerSettings:
+  - Name: Player
+    Icon: {fileID: 21300000, guid: e49ba6fced7ef754b9aacfbe37a29803, type: 3}
+    Prefab: {fileID: 1167624115923239891, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+    Characteristics:
+    - _name: 
+      _type: 0
+      _maxValue: 20
+      _currentValue: 20
+    - _name: 
+      _type: 1
+      _maxValue: 8
+      _currentValue: 8
+  - Name: Police
+    Icon: {fileID: 21300000, guid: d4cbcb798ed6102459f4e11eefe15e14, type: 3}
+    Prefab: {fileID: 263098394674718402, guid: 95de619e466f4fc41941454e30252656, type: 3}
+    Characteristics:
+    - _name: 
+      _type: 0
+      _maxValue: 20
+      _currentValue: 20
+    - _name: 
+      _type: 1
+      _maxValue: 8
+      _currentValue: 8
+  - Name: Girl
+    Icon: {fileID: 21300000, guid: e8d1e8f1e9705d0428c792b3bf5e9cd7, type: 3}
+    Prefab: {fileID: 3903935267145219595, guid: 947cfaa036c8fe941930f5146d92898d, type: 3}
+    Characteristics:
+    - _name: 
+      _type: 0
+      _maxValue: 20
+      _currentValue: 20
+    - _name: 
+      _type: 1
+      _maxValue: 8
+      _currentValue: 8

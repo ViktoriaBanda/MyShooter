@@ -1,8 +1,11 @@
+using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class WinState : MonoBehaviour, IState
 {
     private StateMachine _stateMachine;
+    
+    private CompositeDisposable _subscriptions;
     
     public void Initialize(StateMachine stateMachine)
     {
@@ -11,16 +14,19 @@ public class WinState : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        Debug.Log("WinState");
+        _subscriptions = new CompositeDisposable
+        {
+            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
+        };
     }
 
     public void OnExit()
     {
-        
+        _subscriptions.Dispose();
     }
-
-    public void UpdateState()
+    
+    private void GameStartEventHandler(GameStartEvent eventData)
     {
-        
+        _stateMachine.Enter<GameState>();
     }
 }

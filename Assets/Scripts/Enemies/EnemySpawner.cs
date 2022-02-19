@@ -20,8 +20,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private int _randomRadius = 5;
 
-    [SerializeField] 
-    private GameObject _player;
+    public GameObject Player { get; set; }
 
     private CompositeDisposable _subscriptions;
 
@@ -29,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
 
     private Transform _enemySpawnPoint;
 
-    private void Awake()
+    private void Start()
     {
         _enemyPool = new MonoBehaviourPool<EnemyController>(_enemyControllerPrefab, _enemySpawnPoint, _poolSize);
     
@@ -49,7 +48,7 @@ public class EnemySpawner : MonoBehaviour
                 var randomPosition = Random.insideUnitCircle * _randomRadius;
                 var enemy = _enemyPool.Take();
 
-                enemy.Initialize(_player);
+                enemy.Initialize(Player);
                 
                 var enemyPosition = enemySpawnPoint.position;
                 enemyPosition.x += randomPosition.x;

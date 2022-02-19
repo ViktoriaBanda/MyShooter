@@ -5,15 +5,14 @@ public class UIElementPositionController : MonoBehaviour
     [SerializeField] 
     private RectTransform _uiElement;
 
-    [SerializeField] 
-    private GameObject _uiElementRoot;
+    public GameObject UIElementRoot { get; set; }
 
     [SerializeField] 
     private Vector3 _offset;
 
     private void LateUpdate()
     {
-        var pointInScreenSpace = Camera.main.WorldToScreenPoint(_uiElementRoot.transform.position + _offset);
+        var pointInScreenSpace = Camera.main.WorldToScreenPoint(UIElementRoot.transform.position + _offset);
     
         RectTransformUtility.ScreenPointToLocalPointInRectangle(transform as RectTransform, pointInScreenSpace,
             null, out var localPoint);

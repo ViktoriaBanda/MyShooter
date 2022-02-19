@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using SimpleEventBus.Disposables;
 using UnityEngine;
 
 public class GameOverState : MonoBehaviour, IState
 {
     private StateMachine _stateMachine;
+    
+    private CompositeDisposable _subscriptions;
     
     public void Initialize(StateMachine stateMachine)
     {
@@ -13,16 +16,19 @@ public class GameOverState : MonoBehaviour, IState
 
     public void OnEnter()
     {
-        Debug.Log("GameOver");
+        _subscriptions = new CompositeDisposable
+        {
+            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
+        };
     }
 
     public void OnExit()
     {
-        
+        _subscriptions.Dispose();
     }
     
-    public void UpdateState()
+    private void GameStartEventHandler(GameStartEvent eventData)
     {
-        
+        _stateMachine.Enter<GameState>();
     }
 }

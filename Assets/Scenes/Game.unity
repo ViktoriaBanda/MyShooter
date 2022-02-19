@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4705043967726018260, guid: 8f0029e402ed24844b73e882d433ad59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4705043967726018268, guid: 8f0029e402ed24844b73e882d433ad59, type: 3}
       propertyPath: m_Name
       value: ZombieExplosion
@@ -836,12 +840,12 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.31589773, g: 0.07807048, b: 0.4056604, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.17203197, g: 0.054040574, b: 0.21698111, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize: 10.63
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -876,7 +880,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2329,6 +2333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741548507}
+  - component: {fileID: 1741548508}
   m_Layer: 0
   m_Name: PlayerSpawnPoint
   m_TagString: Untagged
@@ -2351,6 +2356,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741548508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741548506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f2818c9ad8a3f4c8c0a6a4070ca027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1778918756 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1779415424, guid: eda5e32c86d6c3f40acc0d0345582191, type: 3}
@@ -2516,6 +2533,10 @@ PrefabInstance:
     - target: {fileID: 3214060220347665066, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214060220347665070, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3214060220348028550, guid: d015a83485ffd33468bc1cbbb2b70c18, type: 3}
       propertyPath: m_RootOrder
@@ -2976,6 +2997,10 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1252101738739939718, guid: 87a02a4a940a7e74086dae71e5ba3be5, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3828175799966135475, guid: 87a02a4a940a7e74086dae71e5ba3be5, type: 3}
       propertyPath: m_Name
       value: Medicine
@@ -3266,6 +3291,10 @@ PrefabInstance:
       propertyPath: _background
       value: 
       objectReference: {fileID: 2929252283927351545}
+    - target: {fileID: 2929252283927351548, guid: 58d0dc2624ba74c46a3876e6e1da1e4c, type: 3}
+      propertyPath: _handleRange
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8547738678592487468, guid: 58d0dc2624ba74c46a3876e6e1da1e4c, type: 3}
       propertyPath: m_Name
       value: Fixed Joystick
@@ -3389,6 +3418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1167624115923239891, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1167624115923673011, guid: 8c72853e4a1a1154f91b53f70a70c8e1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3450,6 +3483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 913130158}
     m_Modifications:
+    - target: {fileID: 4757127964299395070, guid: eda5e32c86d6c3f40acc0d0345582191, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8649987665376112348, guid: eda5e32c86d6c3f40acc0d0345582191, type: 3}
       propertyPath: m_RootOrder
       value: 0
