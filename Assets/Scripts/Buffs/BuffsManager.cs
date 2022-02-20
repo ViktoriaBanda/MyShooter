@@ -16,7 +16,6 @@ public class BuffsManager : MonoBehaviour
         };
     }
 
-
     private void BuffAchieveEventHandler(BuffAchieveEvent eventData)
     {
         if(eventData.Buff.GetType() == typeof(Bomb))

@@ -10,7 +10,6 @@ public class Weapon : MonoBehaviour
     
     [SerializeField] private AudioClip _audioClip;
 
-
     [SerializeField] private float _reloadTimer = 0.2f;
 
     private float _currentTimer = 0;

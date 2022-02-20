@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class UIElementPositionController : MonoBehaviour
 {
+    public GameObject UIElementRoot { get; set; }
+
     [SerializeField] 
     private RectTransform _uiElement;
-
-    public GameObject UIElementRoot { get; set; }
 
     [SerializeField] 
     private Vector3 _offset;

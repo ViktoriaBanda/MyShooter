@@ -1,6 +1,5 @@
 using SimpleEventBus.Disposables;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour, IState
 {

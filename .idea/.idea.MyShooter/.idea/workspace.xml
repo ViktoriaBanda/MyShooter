@@ -2,66 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/PoliceAnimatorController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/PoliceAnimatorController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/girl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/girl.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/player.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/player.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/police.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/police.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerPreview.renderTexture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerPreview.renderTexture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/police.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/police.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSettingsProvider.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSettingsProvider.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameSceneLoadedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameSceneLoadedEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlayerSelectionEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlayerSelectionEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/RotatingPlayerEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/RotatingPlayerEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/ObjectRotationHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/ObjectRotationHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButtons.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButtons.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayersHolder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayersHolder.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimationController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PoliceAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PoliceAnimatorController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerSpawnPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerSpawnPoint.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/girl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/girl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/police.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/police.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/HealthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/DeathState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/DeathState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/MovingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/MovingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/WaitingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/States/WaitingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joystick/AxisOptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joystick/AxisOptions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/UIElementPositionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/UIElementPositionController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Targets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Targets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalkState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalkState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,16 +82,9 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AgrRegion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerShootingEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Zombie.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Bomb/Bomb.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/ShootingBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/WeaponParticlesController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsViewManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Characteristic.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Joystick/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
@@ -131,7 +96,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Joystick/FixedJoystick.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Joystick/AxisOptions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Joystick/Joystick.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/ObjectRotationHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PrefsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionView.cs" />
@@ -144,23 +108,31 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSettingsProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Targets.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalkState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerSpawnPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/UIElementPositionController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/DeathState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/MovingState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/WaitingState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameOverState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/StartState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/UIElementPositionController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/FreeWalkState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -245,7 +217,7 @@
       <workItem from="1645004810276" duration="10645000" />
       <workItem from="1645082429990" duration="18896000" />
       <workItem from="1645260128999" duration="5467000" />
-      <workItem from="1645268156934" duration="765000" />
+      <workItem from="1645268156934" duration="6474000" />
     </task>
     <task id="LOCAL-00001" summary="Add Bullet">
       <created>1644323031953</created>
@@ -583,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645110878179</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="added player choise">
+      <created>1645269788982</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1645269788982</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +612,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="добавила EnemyTakesDamageEvent (публикует бомба и BulletCollisionDetector)" />
     <MESSAGE value="Поправила классы,работающие со звуками" />
     <MESSAGE value="Поправила размер частиц" />
     <MESSAGE value="test" />
@@ -658,6 +636,7 @@
     <MESSAGE value="fixed joystick" />
     <MESSAGE value="fixed Joystick class" />
     <MESSAGE value="fixed Joystick class (removed unnecessary code)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Joystick class (removed unnecessary code)" />
+    <MESSAGE value="added player choise" />
+    <option name="LAST_COMMIT_MESSAGE" value="added player choise" />
   </component>
 </project>

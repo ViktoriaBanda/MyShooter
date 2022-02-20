@@ -73,7 +73,7 @@
      <Compile Include="Assets\Scripts\Buffs\BuffsViewManager.cs" />
      <Compile Include="Assets\Scripts\PlayerPreview\PlayerSettingsProvider.cs" />
      <Compile Include="Assets\Scripts\Player\Characteristic.cs" />
-     <Compile Include="Assets\PlayerSpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\GameStates\GameController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerTakesDamageEvent.cs" />
@@ -104,13 +104,11 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\PlayerPreview\PlayerSelectionButtons.cs" />
      <Compile Include="Assets\Scripts\Events\LevelWinEvent.cs" />
-     <Compile Include="Assets\Scripts\Joystick\AxisOptions.cs" />
      <Compile Include="Assets\Scripts\Player\Targets.cs" />
      <Compile Include="Assets\Scripts\Player\States\PlayerDeathState.cs" />
      <Compile Include="Assets\Scripts\Events\BuffAchieveEvent.cs" />
      <Compile Include="Assets\Scripts\Bullet\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Player\States\IdleState.cs" />
      <Compile Include="Assets\Scripts\Events\BulletHitEvent.cs" />
      <Compile Include="Assets\Scripts\DeadEnemiesCounter.cs" />
      <Compile Include="Assets\Scripts\Particles\GameObjectsPool.cs" />

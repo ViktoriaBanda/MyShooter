@@ -10,6 +10,7 @@ public class FreeWalkState : MonoBehaviour,IState
     private MovementBehaviour _movementBehaviour;
 
     private StateMachine _stateMachine;
+    
     public void Initialize(StateMachine stateMachine)
     {
         _stateMachine = stateMachine;

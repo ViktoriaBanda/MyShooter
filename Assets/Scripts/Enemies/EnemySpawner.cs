@@ -5,9 +5,11 @@ using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public GameObject Player { get; set; }
+
     [SerializeField] 
     private EnemyController _enemyControllerPrefab;
-    
+
     [SerializeField]
     private int _poolSize = 50;
 
@@ -19,8 +21,6 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField]
     private int _randomRadius = 5;
-
-    public GameObject Player { get; set; }
 
     private CompositeDisposable _subscriptions;
 

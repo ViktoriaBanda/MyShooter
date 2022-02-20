@@ -35,9 +35,14 @@ public class MovingState : MonoBehaviour, IState
         _isMoving = false;
     }
 
-    public void UpdateState()
+    private void Update()
     {
+        if (!_isMoving)
+        {
+            return;
+        }
         
+        _navMeshAgent.destination = _player.transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -47,15 +52,5 @@ public class MovingState : MonoBehaviour, IState
             EventStreams.Game.Publish(new EnemyCollisionEvent(collision.gameObject));
             _stateMachine.Enter<AttackState>();
         }
-    }
-
-    private void Update()
-    {
-        if (!_isMoving)
-        {
-            return;
-        }
-        
-        _navMeshAgent.destination = _player.transform.position;
     }
 }

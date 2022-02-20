@@ -3,15 +3,14 @@ using UnityEngine;
 public class MovementBehaviour : MonoBehaviour
 {
     private static readonly int IsMove = Animator.StringToHash("isMove");
-    
+    public Joystick.Joystick Joystick { get; set; }
+
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
-    
+
     [SerializeField]
     private Animator _animator;
 
-    public Joystick.Joystick Joystick { get; set; }
-    
     [SerializeField]
     private Rigidbody _rigidbody;
 

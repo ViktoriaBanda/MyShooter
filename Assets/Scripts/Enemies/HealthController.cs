@@ -25,8 +25,8 @@ namespace Enemies
                 EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
             };
         }
-    
-        public void DecreaseHealth(float damageValue)
+
+        private void DecreaseHealth(float damageValue)
         {
             _currentHealth -= damageValue;
 

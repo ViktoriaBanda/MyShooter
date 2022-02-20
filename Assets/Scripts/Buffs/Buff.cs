@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Buff : MonoBehaviour
 {
-    public string Name { get; set; }
-    
     public CharacteristicType Type { get; set; }
 
     public event Action BuffAchieveEvent;

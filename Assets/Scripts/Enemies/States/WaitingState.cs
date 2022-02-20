@@ -28,9 +28,4 @@ public class WaitingState : MonoBehaviour, IState
     {
         _enemyAgrRegion.OnPlayerGetIntoAgrRegion -= _stateMachine.Enter<MovingState>;
     }
-
-    public void UpdateState()
-    {
-        
-    }
 }

@@ -985,7 +985,6 @@ GameObject:
   - component: {fileID: 8347810070049888989}
   - component: {fileID: -5545538167555178184}
   - component: {fileID: 6445289645442370964}
-  - component: {fileID: -6184571559625162224}
   - component: {fileID: 8793906363049349455}
   - component: {fileID: 8540467772668940633}
   - component: {fileID: 6911269716435914307}
@@ -1101,18 +1100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpawnPosition: {fileID: 0}
---- !u!114 &-6184571559625162224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167624115923239891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bef376e0dfe814478157d16d2b9b598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8793906363049349455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,7 +1169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
   _animator: {fileID: 1167624115915960821}
-  _joystick: {fileID: 0}
   _rigidbody: {fileID: 8347810070049888989}
 --- !u!1 &1167624115923239895
 GameObject:
@@ -1419,7 +1405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: f80ae128dd224bc4d970435994142ecc, type: 3}
-  bulletPool: {fileID: 0}
   _reloadTimer: 0.2
 --- !u!114 &1770901591
 MonoBehaviour:
