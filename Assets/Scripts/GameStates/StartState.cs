@@ -70,6 +70,7 @@ public class StartState : MonoBehaviour, IState
         _gameState.SpawnPoint = spawnPoint;
 
         enemySpawner.GetComponent<EnemySpawner>().Player = player;
+        
         camera.GetComponent<CameraController>().PlayerTransform = player.transform;
         healthBar.GetComponent<UIElementPositionController>().UIElementRoot = player;
         

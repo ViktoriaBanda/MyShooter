@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform _playerSpawnPosition;
-    
     private StateMachine _stateMachine;
     private CompositeDisposable _subscriptions;
     
@@ -23,13 +20,19 @@ public class PlayerController : MonoBehaviour
         
         _subscriptions = new CompositeDisposable
         {
-            EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler)
+            EventStreams.Game.Subscribe<PlayerDiedEvent>(PlayerDiedEventHandler),
+            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
         };
     }
 
-    private void PlayerDiedEventHandler(PlayerDiedEvent obj)
+    private void PlayerDiedEventHandler(PlayerDiedEvent eventData)
     {
         _stateMachine.Enter<PlayerDeathState>();
+    }
+    
+    private void GameStartEventHandler(GameStartEvent eventData)
+    {
+        _stateMachine.Enter<FreeWalkState>();
     }
 
     private void OnDestroy()
