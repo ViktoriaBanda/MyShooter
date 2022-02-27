@@ -2,7 +2,7 @@ using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Move : Action
+public class Seek : Action
 {
     public Player Target;
     public NavMeshAgent NavMeshAgent;

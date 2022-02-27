@@ -82,8 +82,8 @@
      <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedUInt.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Actions\StopBehaviorTree.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalScale.cs" />
-     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Composites\PrioritySelector.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Animator\StopPlayback.cs" />
+     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Composites\PrioritySelector.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Math\IntComparison.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\UseGravity.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Conditionals\HasReceivedEvent.cs" />
@@ -608,7 +608,7 @@
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetHeight.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerVolume.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetPlaybackSpeed.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Behaviour\Move.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Behaviour\Seek.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\IsKinematic.cs" />
      <Compile Include="Assets\Scripts\Enemies\States\MovingState.cs" />
      <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Dot.cs" />
@@ -1315,9 +1315,6 @@
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
@@ -1330,8 +1327,8 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <Reference Include="Unity.Sysroot.Linux_x86_64">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -1363,20 +1360,32 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.State">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.SysrootPackage.Editor">
+     <HintPath>D:/Unity/Projects/MyShooter/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

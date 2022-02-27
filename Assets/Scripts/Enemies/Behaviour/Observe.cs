@@ -1,7 +1,7 @@
 using BehaviorDesigner.Runtime.Tasks;
 using SimpleEventBus.Disposables;
 
-public class Observe : Action
+public class Observe : Conditional
 {
     public EnemyAgrRegion EnemyAgrRegion;
     private bool _wasPlayerFound;

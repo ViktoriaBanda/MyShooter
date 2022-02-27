@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class Attack : Action
 {
-    public Move Move;
+    public Seek Seek;
     public float DamageValue = 5f;
     
     private Player _target;
     
     public override void OnAwake()
     {
-        _target = Move.Target;
+        _target = Seek.Target;
     }
 
     public override TaskStatus OnUpdate()
