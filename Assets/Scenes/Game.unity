@@ -2962,6 +2962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characteristicManager: {fileID: 11400000, guid: f0bc3facc385808499c017d96e6ef81e, type: 2}
   _healthBar: {fileID: 886839634}
+  _healthController: {fileID: 886839637}
 --- !u!224 &2929252283927351545 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8547738678592487469, guid: 58d0dc2624ba74c46a3876e6e1da1e4c, type: 3}

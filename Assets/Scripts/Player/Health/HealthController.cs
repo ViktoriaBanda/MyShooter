@@ -1,15 +1,16 @@
-using SimpleEventBus.Disposables;
 using SimpleEventBus.Events;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
+using CompositeDisposable = SimpleEventBus.Disposables.CompositeDisposable;
 
 public class HealthController : MonoBehaviour
 {
+    public BehaviorSubject<float> CurrentHealth;
+    public float MaxHealth { get; private set; }
+
     [SerializeField] 
     private CharacteristicManager _characteristicManager;
-
-    private float _currentHealth;
-    private float _maxHealth;
 
     private ColorBlock _healthColor;
     
@@ -17,7 +18,10 @@ public class HealthController : MonoBehaviour
     
     private void Start()
     {
-        _maxHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
+        MaxHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health).GetMaxValue();
+        
+        CurrentHealth = new BehaviorSubject<float>(MaxHealth);
+        
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerTakesDamageEventHandler),  
@@ -29,12 +33,12 @@ public class HealthController : MonoBehaviour
     private void PlayerTakesDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
         var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
-        _currentHealth = currentHealth.GetCurrentValue();
+        CurrentHealth.OnNext( CurrentHealth.Value - eventData.DamageValue);
         
-        _currentHealth -= eventData.DamageValue;
-        currentHealth.SetValue(_currentHealth);
         
-        if (_currentHealth <= 0)
+        currentHealth.SetValue(CurrentHealth.Value);
+        
+        if (CurrentHealth.Value <= 0)
         {
             EventStreams.Game.Publish(new PlayerDiedEvent());
         }
@@ -47,9 +51,9 @@ public class HealthController : MonoBehaviour
 
     private void ResetHealth()
     {
-        _currentHealth = _maxHealth;
+        CurrentHealth.OnNext(MaxHealth);
         var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
-        currentHealth.SetValue(_currentHealth);
+        currentHealth.SetValue(CurrentHealth.Value);
     }
 
     private void OnDestroy()

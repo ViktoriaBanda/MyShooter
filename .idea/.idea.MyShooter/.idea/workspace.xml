@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/HealthBuffAchieveEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/HealthBuffAchieveEvent.cs.meta" afterDir="false" />
+    <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="added HealthBuffAchieveEvent">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyShooter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MyShooter.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +47,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviourKeyBoard.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/Behaviours/MovementBehaviourKeyboard.cs" />
@@ -104,8 +94,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Observe.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UniRX/BehaviorSubject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
     </changedPaths>
   </component>
@@ -200,14 +191,7 @@
       <workItem from="1645949566970" duration="1991000" />
       <workItem from="1646069909739" duration="446000" />
       <workItem from="1646229039195" duration="1162000" />
-      <workItem from="1646841342176" duration="2356000" />
-    </task>
-    <task id="LOCAL-00004" summary="newMechanics">
-      <created>1644349777065</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1644349777065</updated>
+      <workItem from="1646841342176" duration="5795000" />
     </task>
     <task id="LOCAL-00005" summary="some changes">
       <created>1644392706652</created>
@@ -545,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645949600021</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="added HealthBuffAchieveEvent">
+      <created>1646843938096</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1646843938096</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +586,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Removed EnemyPoolCreator" />
     <MESSAGE value="Removed subscription on EnemyTakesDamageEvent from EnemyStates" />
     <MESSAGE value="removed PlayerDiedEventHandler from PalyerStates" />
     <MESSAGE value="fixet particles" />
@@ -620,6 +610,7 @@
     <MESSAGE value="fixed player choice" />
     <MESSAGE value="added Behavior tree to Zombie" />
     <MESSAGE value="some small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some small changes" />
+    <MESSAGE value="added HealthBuffAchieveEvent" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HealthBuffAchieveEvent" />
   </component>
 </project>
