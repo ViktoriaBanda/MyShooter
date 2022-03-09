@@ -25,8 +25,7 @@ public class BuffsManager : MonoBehaviour
 
         if (eventData.Buff.GetType() == typeof(Health))
         {
-            var characteristic = _playerCharacteristicManager.GetCharacteristicByType(eventData.Buff.Type);
-                    characteristic.SetValue(characteristic.GetMaxValue());
+            EventStreams.Game.Publish(new HealthBuffAchieveEvent());
         }
     }
 

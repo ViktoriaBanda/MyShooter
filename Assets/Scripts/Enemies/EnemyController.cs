@@ -5,6 +5,7 @@ public class EnemyController : MonoBehaviour
 {
     public GameObject Player => _player;
 
+    
     private GameObject _player;
 
     private Behavior _behaviorTree;
@@ -19,5 +20,4 @@ public class EnemyController : MonoBehaviour
         _player = player;
         _behaviorTree.FindTask<Seek>().Target = _player.GetComponent<Player>();
     }
-
 }

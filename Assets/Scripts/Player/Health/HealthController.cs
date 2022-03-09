@@ -1,5 +1,5 @@
-using System;
 using SimpleEventBus.Disposables;
+using SimpleEventBus.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +21,8 @@ public class HealthController : MonoBehaviour
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<PlayerTakesDamageEvent>(PlayerTakesDamageEventHandler),  
-            EventStreams.Game.Subscribe<GameStartEvent>(GameStartEventHandler)
+            EventStreams.Game.Subscribe<GameStartEvent>(ResetHealth),
+            EventStreams.Game.Subscribe<HealthBuffAchieveEvent>(ResetHealth)
         };
     }
 
@@ -39,7 +40,7 @@ public class HealthController : MonoBehaviour
         }
     }
 
-    private void GameStartEventHandler(GameStartEvent eventData)
+    private void ResetHealth(EventBase eventData)
     {
         ResetHealth();
     }
