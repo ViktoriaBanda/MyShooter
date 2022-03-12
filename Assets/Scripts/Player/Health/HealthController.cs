@@ -35,7 +35,6 @@ public class HealthController : MonoBehaviour
         var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
         CurrentHealth.OnNext( CurrentHealth.Value - eventData.DamageValue);
         
-        
         currentHealth.SetValue(CurrentHealth.Value);
         
         if (CurrentHealth.Value <= 0)

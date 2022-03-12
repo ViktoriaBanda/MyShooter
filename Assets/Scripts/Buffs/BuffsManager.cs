@@ -23,7 +23,7 @@ public class BuffsManager : MonoBehaviour
             return;    
         }
 
-        if (eventData.Buff.GetType() == typeof(Health))
+        if (eventData.Buff.GetType() == typeof(HealthBuff))
         {
             EventStreams.Game.Publish(new HealthBuffAchieveEvent());
         }

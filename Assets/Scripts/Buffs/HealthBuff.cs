@@ -1,5 +1,5 @@
 
-public class Health : Buff
+public class HealthBuff : Buff
 {
     private void Start()
     {
