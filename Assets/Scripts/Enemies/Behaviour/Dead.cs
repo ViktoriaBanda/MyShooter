@@ -18,10 +18,10 @@ public class Dead : Action
     {
         if (_isDead) 
         {
-            return TaskStatus.Failure;
+            return TaskStatus.Success;
         }
         
-        return TaskStatus.Success;
+        return TaskStatus.Failure;
     }
     
     private void EnemyDiedEventHandler(EnemyDiedEvent eventData)

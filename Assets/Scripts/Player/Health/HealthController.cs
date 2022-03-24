@@ -7,6 +7,7 @@ using CompositeDisposable = SimpleEventBus.Disposables.CompositeDisposable;
 public class HealthController : MonoBehaviour
 {
     public BehaviorSubject<float> CurrentHealth;
+    
     public float MaxHealth { get; private set; }
 
     [SerializeField] 
@@ -32,9 +33,9 @@ public class HealthController : MonoBehaviour
 
     private void PlayerTakesDamageEventHandler(PlayerTakesDamageEvent eventData)
     {
-        var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
         CurrentHealth.OnNext( CurrentHealth.Value - eventData.DamageValue);
         
+        var currentHealth = _characteristicManager.GetCharacteristicByType(CharacteristicType.Health);
         currentHealth.SetValue(CurrentHealth.Value);
         
         if (CurrentHealth.Value <= 0)

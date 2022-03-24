@@ -17,9 +17,8 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         _maxHealth = _healthController.MaxHealth;
-        _healthController.CurrentHealth.Do(value => Initialize(value)).Subscribe().AddTo(this);
+        _healthController.CurrentHealth.Subscribe(Initialize).AddTo(this);
     }
-
 
     private void Initialize(float currentHealth)
     {

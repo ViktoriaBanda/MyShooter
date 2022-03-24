@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91977d4-a708-409f-90d7-79c210b2fad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/BackButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/BackButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/StartButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/StartButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/LobbyStateLoadedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/LobbyStateLoadedEvent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assembly-CSharp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assembly-CSharp.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/HealthBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/HealthBuff.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsViewManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsViewManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Dead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Dead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/EventStreams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/EventStreams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyShooter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MyShooter.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PrefsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PrefsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -68,15 +50,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8606EE0E-D65C-409B-8C10-28D94CD8C1EF/7b/217c480c/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PlayerDeath.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PrefsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayersHolder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlayerSelectionEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PlayerSelectionButtons.cs" />
@@ -86,7 +64,6 @@
       <option value="$PROJECT_DIR$/Assets/PlayerSpawnPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/WinState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/DeathState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/States/WaitingState.cs" />
@@ -103,26 +80,32 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Dead.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Seek.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Observe.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UniRX/BehaviorSubject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/BombExplodeEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/HealthBuff.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScreenManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/Button.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/BackButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/GameSceneLoadedEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Events/LobbyStateLoadedEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/StartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/StartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStates/LobbyState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawnPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Behaviour/Dead.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPreview/PrefsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/EventStreams.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Events/BuffAchieveEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/Buff.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Buffs/BuffsViewManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AgrRegion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health/HealthBar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="24p74yynva8pOJm6VxAzvEEnDJf" />
@@ -218,21 +201,11 @@
       <workItem from="1646229039195" duration="1162000" />
       <workItem from="1646841342176" duration="6742000" />
       <workItem from="1647002453655" duration="441000" />
-      <workItem from="1647078289186" duration="8513000" />
-    </task>
-    <task id="LOCAL-00006" summary="changes">
-      <created>1644394200626</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1644394200626</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Поправила классы для работы с пулями">
-      <created>1644403628622</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1644403628622</updated>
+      <workItem from="1647078289186" duration="10067000" />
+      <workItem from="1647154054374" duration="4118000" />
+      <workItem from="1647496099180" duration="1924000" />
+      <workItem from="1647860298062" duration="11517000" />
+      <workItem from="1648047164643" duration="5001000" />
     </task>
     <task id="LOCAL-00008" summary="добавила класс Weapon">
       <created>1644404829766</created>
@@ -563,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646847698608</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added BackButton">
+      <created>1647108525779</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1647108525780</updated>
+    </task>
+    <task id="LOCAL-00056" summary="rename StartScene to Bootstrap">
+      <created>1647108695017</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1647108695018</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,8 +600,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="removed PlayerDiedEventHandler from PalyerStates" />
-    <MESSAGE value="fixet particles" />
     <MESSAGE value="created GameObjectsPool for particles" />
     <MESSAGE value="added ShootingBehaviour" />
     <MESSAGE value="fix ShootingBehaviour" />
@@ -638,6 +623,8 @@
     <MESSAGE value="some small changes" />
     <MESSAGE value="added HealthBuffAchieveEvent" />
     <MESSAGE value="added UniRx to HealthController" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UniRx to HealthController" />
+    <MESSAGE value="added BackButton" />
+    <MESSAGE value="rename StartScene to Bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename StartScene to Bootstrap" />
   </component>
 </project>
